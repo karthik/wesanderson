@@ -1,0 +1,63 @@
+
+# Wes Anderson Palettes
+
+![](rushmore.jpg)
+
+> I saved you from boring plots. What did you ever do? - Max Fischer (probably)
+
+Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to a plot. 
+
+```coffee
+devtools::install_github("karthik/wesanderson")
+```
+
+
+__Current list of available palettes__
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  error = FALSE,
+  tidy = FALSE,
+  fig.cap="",
+  fig.width = 6
+)
+```
+
+
+```{r, palettes_dummy, eval = FALSE}
+library(wesanderson)
+namelist
+```
+
+```{r, palettes, echo = FALSE, results = "asis"}
+library(pander)
+library(wesanderson)
+pandoc.table(namelist)
+```
+
+__Some examples__
+
+```{r, ggplot1}
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
+```
+
+```{r, ggplot2}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
+```
+
+
+__See the palettes__
+
+```{r, palette1, fig.height = 3}
+display.wes.palette(4, "GrandBudapest")
+display.wes.palette(4, "Moonrise1")
+display.wes.palette(4, "Royal1")
+display.wes.palette(4, "Moonrise2")
+display.wes.palette(5, "Cavalcanti")
+display.wes.palette(5, "Royal2")
+display.wes.palette(4, "GrandBudapest2")
+display.wes.palette(5, "Moonrise3")
+display.wes.palette(4, "Chevalier")
+
+```

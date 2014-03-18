@@ -1,0 +1,12 @@
+Package: wesanderson
+Title: A Wes Anderson Palette Generator
+Description: Palettes generated from
+    \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+Version: 0.1
+Authors@R: 'Karthik Ram <karthik.ram@gmail.com> [aut, cre]'
+Depends:
+    R (>= 3.0.3)
+License: MIT + file LICENSE
+LazyData: true
+Suggests:
+    ggplot2
