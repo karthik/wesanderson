@@ -27,7 +27,7 @@ namelist
 
 
 |     movies     |  wesnums  |
-|:--------------:|:---------:|
+| -------------- | --------- |
 | GrandBudapest  |     4     |
 |   Moonrise1    |     4     |
 |     Royal1     |     4     |
