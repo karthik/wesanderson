@@ -43,7 +43,8 @@ __Some examples__
 
 
 ```coffee
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+scale_fill_manual(values = wes.palette(2, "Royal1"))
 ```
 
 ![](figure/ggplot1.png) 
@@ -51,7 +52,10 @@ qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual
 
 
 ```coffee
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+geom_point(size = 3) + 
+scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
+theme_gray()
 ```
 
 ![](figure/ggplot2.png) 
