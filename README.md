@@ -26,6 +26,7 @@ namelist
 
 
 
+
 |     movies     |  wesnums  |
 | -------------- | --------- |
 | GrandBudapest  |     4     |
@@ -37,14 +38,17 @@ namelist
 | GrandBudapest2 |     4     |
 |   Moonrise3    |     5     |
 |   Chevalier    |     4     |
+|     Zissou     |     5     |
+|  FantasticFox  |     5     |
+|   Darjeeling   |     5     |
+|    Rushmore    |     5     |
 
 
 __Some examples__
 
 
 ```coffee
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
-scale_fill_manual(values = wes.palette(2, "Royal1"))
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
 ```
 
 ![](figure/ggplot1.png) 
@@ -52,10 +56,7 @@ scale_fill_manual(values = wes.palette(2, "Royal1"))
 
 
 ```coffee
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-geom_point(size = 3) + 
-scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
-theme_gray()
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
 ```
 
 ![](figure/ggplot2.png) 
@@ -118,4 +119,28 @@ display.wes.palette(4, "Chevalier")
 ```
 
 ![](figure/palette19.png) 
+
+```coffee
+display.wes.palette(5, "Zissou")
+```
+
+![](figure/palette110.png) 
+
+```coffee
+display.wes.palette(4, "FantasticFox")
+```
+
+![](figure/palette111.png) 
+
+```coffee
+display.wes.palette(5, "Darjeeling")
+```
+
+![](figure/palette112.png) 
+
+```coffee
+display.wes.palette(4, "Rushmore")
+```
+
+![](figure/palette113.png) 
 

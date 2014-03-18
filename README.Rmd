@@ -58,5 +58,8 @@ display.wes.palette(5, "Royal2")
 display.wes.palette(4, "GrandBudapest2")
 display.wes.palette(5, "Moonrise3")
 display.wes.palette(4, "Chevalier")
-
+display.wes.palette(5, "Zissou")
+display.wes.palette(4, "FantasticFox")
+display.wes.palette(5, "Darjeeling")
+display.wes.palette(4, "Rushmore")
 ```

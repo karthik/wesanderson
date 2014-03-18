@@ -22,7 +22,10 @@ Royal2 <- c("#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089")
 GrandBudapest2 <- c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4")
 Moonrise3 <- c("#85D4E3", "#F4B5BD", "#9C964A", "#CDC08C", "#FAD77B")
 Chevalier <- c("#446455", "#FDD262", "#D3DDDC", "#C7B19C")
-
+Zissou <- c("#78B7C5", "#3B9AB2", "#EBCC2A", "#E1AF00", "#F21A00")
+FantasticFox <- c("#DD8D29", "#E2D200", "#46ACC8", "#E58601", "#B40F20")
+Darjeeling <- c("#FF0000", "#00A08A", "#F2AD00", "#F98400", "#5BBCD6")
+Rushmore <- c("#E1BD6D", "#EABE94", "#0B775E", "#35274A" ,"#F2300F")
 if(!name %in% namelist$movies)
 	stop("Palette not found.")
 
