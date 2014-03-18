@@ -32,7 +32,7 @@ namelist
 ```{r, palettes, echo = FALSE, results = "asis"}
 library(pander)
 library(wesanderson)
-pandoc.table(namelist)
+pandoc.table(namelist, style = "grid")
 ```
 
 __Some examples__
