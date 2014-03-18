@@ -19,7 +19,7 @@ __Current list of available palettes__
 
 
 
-```r
+```coffee
 library(wesanderson)
 namelist
 ```
@@ -42,7 +42,7 @@ namelist
 __Some examples__
 
 
-```r
+```coffee
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
 ```
 
@@ -50,7 +50,7 @@ qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual
 
 
 
-```r
+```coffee
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
 ```
 
@@ -61,55 +61,55 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size 
 __See the palettes__
 
 
-```r
+```coffee
 display.wes.palette(4, "GrandBudapest")
 ```
 
 ![](figure/palette11.png) 
 
-```r
+```coffee
 display.wes.palette(4, "Moonrise1")
 ```
 
 ![](figure/palette12.png) 
 
-```r
+```coffee
 display.wes.palette(4, "Royal1")
 ```
 
 ![](figure/palette13.png) 
 
-```r
+```coffee
 display.wes.palette(4, "Moonrise2")
 ```
 
 ![](figure/palette14.png) 
 
-```r
+```coffee
 display.wes.palette(5, "Cavalcanti")
 ```
 
 ![](figure/palette15.png) 
 
-```r
+```coffee
 display.wes.palette(5, "Royal2")
 ```
 
 ![](figure/palette16.png) 
 
-```r
+```coffee
 display.wes.palette(4, "GrandBudapest2")
 ```
 
 ![](figure/palette17.png) 
 
-```r
+```coffee
 display.wes.palette(5, "Moonrise3")
 ```
 
 ![](figure/palette18.png) 
 
-```r
+```coffee
 display.wes.palette(4, "Chevalier")
 ```
 
