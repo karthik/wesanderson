@@ -26,16 +26,6 @@ namelist
 
 
 
-```
-#> 
-#> Attaching package: 'pander'
-#> 
-#> The following object is masked from 'package:knitr':
-#> 
-#>     pandoc
-```
-
-
 ------------------------
     movies      wesnums 
 -------------- ---------
