@@ -5,7 +5,7 @@ Description: Palettes generated from
 Version: 0.1
 Authors@R: 'Karthik Ram <karthik.ram@gmail.com> [aut, cre]'
 Depends:
-    R (>= 3.0.3)
+    R (>= 3.0)
 License: MIT + file LICENSE
 LazyData: true
 Suggests:
