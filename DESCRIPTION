@@ -1,9 +1,12 @@
 Package: wesanderson
 Title: A Wes Anderson Palette Generator
-Description: Palettes generated from
+Description: Palettes generated mostly from
     \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
 Version: 0.1
-Authors@R: 'Karthik Ram <karthik.ram@gmail.com> [aut, cre]'
+Authors@R: c(person(person("Karthik", "Ram", role = "aut, cre",
+    email = "karthik.ram@gmail.com"),
+    person("Richards", "Clark", role = "ctb",
+    email = "crichards@whoi.edu"))
 Depends:
     R (>= 3.0)
 License: MIT + file LICENSE
