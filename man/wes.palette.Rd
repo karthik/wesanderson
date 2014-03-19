@@ -9,7 +9,8 @@ wes.palette(name)
   \code{GrandBudapest}, \code{Moonrise1}, \code{Royal1},
   \code{Moonrise2}, \code{Cavalcanti}, \code{Royal2},
   \code{GrandBudapest2}, \code{Moonrise3},
-  \code{Chevalier}}
+  \code{Chevalier}, \code{Zissou}, \code{FantasticFox},
+  \code{Darjeeling}, \code{Rushmore}}
 }
 \description{
   These are a handful of color palettes from Wes Anderson movies.All
