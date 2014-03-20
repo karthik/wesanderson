@@ -1,10 +1,12 @@
+[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
+
 # Wes Anderson Palettes
 
 ![](rushmore.jpg)
 
 > I saved you from boring plots. What did you ever do? - Max Fischer (probably)
 
-Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. Several palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
+Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. All palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
 ```coffee
 devtools::install_github("karthik/wesanderson")
@@ -22,7 +24,6 @@ __Current list of available palettes__
 library(wesanderson)
 namelist
 ```
-
 
 
 
