@@ -2,29 +2,36 @@
 \alias{wes.palette}
 \title{A Wes Anderson palette generator}
 \usage{
-wes.palette(name)
+wes.palette(n, name, type = FALSE)
 }
 \arguments{
+  \item{n}{Number of colors desired. Unfortunately most
+  palettes now only have 4 or 5 colors. But hopefully we'll
+  add more palettes soon. All color schemes are derived
+  from the most excellent Tumblr blog:
+  \href{http://wesandersonpalettes.tumblr.com/}{Wes
+  Anderson Palettes}}
+
   \item{name}{Name of desired palette. Choices are:
   \code{GrandBudapest}, \code{Moonrise1}, \code{Royal1},
   \code{Moonrise2}, \code{Cavalcanti}, \code{Royal2},
   \code{GrandBudapest2}, \code{Moonrise3},
-  \code{Chevalier}, \code{Zissou}, \code{FantasticFox},
-  \code{Darjeeling}, \code{Rushmore}}
+  \code{Chevalier}}
+
+  \item{type}{Set to continuous if you require a gradient
+  of colors similar to how heat map works.}
 }
 \description{
-  These are a handful of color palettes from Wes Anderson movies.All
-color schemes are derived from the most excellent Tumblr blog:
-\href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
-}
-\value{
-  A \code{colorRampPalette} palette function based on the specified
-  color scheme.
+These are a handful of color palettes from Wes Anderson
+movies.
 }
 \examples{
 wes.palette(3, "Royal1")
 wes.palette(3, "GrandBudapest")
 wes.palette(5, "Cavalcanti")
+# You can also request a continuous range of colors
+pal <- wes.palette(name = "Zissou", type = "continuous")
+image(volcano, col = pal(21))
 }
 \keyword{colors}
 
