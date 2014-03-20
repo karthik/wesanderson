@@ -46,6 +46,11 @@ qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
 ```
 
+```{r, volcano}
+pal <- wes.palette(name = "Zissou", type = "continuous")
+image(volcano, col = pal(21))
+```
+
 
 __See the palettes__
 

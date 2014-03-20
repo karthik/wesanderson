@@ -27,6 +27,8 @@ namelist
 
 
 
+
+
 |     movies     |  wesnums  |
 | -------------- | --------- |
 | GrandBudapest  |     4     |
@@ -60,6 +62,15 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size 
 ```
 
 ![](figure/ggplot2.png) 
+
+
+
+```coffee
+pal <- wes.palette(name = "Zissou", type = "continuous")
+image(volcano, col = pal(21))
+```
+
+![](figure/volcano.png) 
 
 
 
