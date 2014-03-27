@@ -69,3 +69,13 @@ if(n > namelist[which(namelist$movies == name), 2])
        xlab=name, ylab = "",xaxt = "n",yaxt = "n", bty = "n")
 
 }
+
+
+
+#' heatmap
+#'
+#' A heatmap example
+#' @docType data
+#' @keywords datasets
+#' @name heatmap
+NULL
