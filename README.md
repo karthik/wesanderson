@@ -20,17 +20,26 @@ __Current list of available palettes__
 
 
 
-```coffee
+```r
 library(wesanderson)
 namelist
 ```
 
 
 
+```
+#> 
+#> Attaching package: 'pander'
+#> 
+#> The following object is masked from 'package:knitr':
+#> 
+#>     pandoc
+```
+
 
 
 |     movies     |  wesnums  |
-| -------------- | --------- |
+|:--------------:|:---------:|
 | GrandBudapest  |     4     |
 |   Moonrise1    |     4     |
 |     Royal1     |     4     |
@@ -49,7 +58,7 @@ namelist
 __Some examples__
 
 
-```coffee
+```r
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
 ```
 
@@ -57,15 +66,21 @@ qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual
 
 
 
-```coffee
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point(size = 3) + scale_color_manual(values = wes.palette(3, "GrandBudapest")) + theme_gray()
+```r
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+geom_point(size = 3) + 
+scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
+theme_gray()
 ```
 
 ![](figure/ggplot2.png) 
 
 
 
-```coffee
+## The Life Aquatic
+
+
+```r
 pal <- wes.palette(name = "Zissou", type = "continuous")
 image(volcano, col = pal(21))
 ```
@@ -74,82 +89,97 @@ image(volcano, col = pal(21))
 
 
 
+```r
+library(wesanderson)
+pal <- wes.palette(name = "Zissou", type = "continuous")
+# heatmap is a local dataset
+ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
+ geom_tile() + 
+ scale_fill_gradientn(colours = pal(100)) + 
+scale_x_discrete(expand = c(0, 0)) +
+scale_y_discrete(expand = c(0, 0)) + coord_equal() 
+```
+
+![](figure/zissou_heatmap.png) 
+
+
+
 __See the palettes__
 
 
-```coffee
+```r
 display.wes.palette(4, "GrandBudapest")
 ```
 
 ![](figure/palette11.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Moonrise1")
 ```
 
 ![](figure/palette12.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Royal1")
 ```
 
 ![](figure/palette13.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Moonrise2")
 ```
 
 ![](figure/palette14.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Cavalcanti")
 ```
 
 ![](figure/palette15.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Royal2")
 ```
 
 ![](figure/palette16.png) 
 
-```coffee
+```r
 display.wes.palette(4, "GrandBudapest2")
 ```
 
 ![](figure/palette17.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Moonrise3")
 ```
 
 ![](figure/palette18.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Chevalier")
 ```
 
 ![](figure/palette19.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Zissou")
 ```
 
 ![](figure/palette110.png) 
 
-```coffee
+```r
 display.wes.palette(4, "FantasticFox")
 ```
 
 ![](figure/palette111.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Darjeeling")
 ```
 
 ![](figure/palette112.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Rushmore")
 ```
 
