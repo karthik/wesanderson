@@ -191,3 +191,11 @@ display.wes.palette(4, "Rushmore")
 
 ![](figure/palette113.png) 
 
+
+## Gallery of examples
+
+* [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
+
+![](http://i.imgur.com/rKqbzQB.png)
+
+
