@@ -5,7 +5,7 @@ Description: Palettes generated mostly from
 Version: 0.3
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     email = "karthik.ram@gmail.com"),
-    person("Richards", "Clark", role = "ctb",
+    person("Clark", "Richards", role = "ctb",
     email = "crichards@whoi.edu"))
 Depends:
     R (>= 3.0)
