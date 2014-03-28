@@ -3,3 +3,4 @@ figure/
 rushmore.jpg
 README.Rmd
 .travis.yml
+Makefile
