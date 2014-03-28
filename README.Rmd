@@ -9,6 +9,12 @@
 Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. Several palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
 ```coffee
+install.packages("wesanderson")
+```
+
+__Or the development version__
+
+```coffee
 devtools::install_github("karthik/wesanderson")
 ```
 
