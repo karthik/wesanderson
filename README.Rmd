@@ -91,6 +91,7 @@ display.wes.palette(5, "Zissou")
 display.wes.palette(4, "FantasticFox")
 display.wes.palette(5, "Darjeeling")
 display.wes.palette(4, "Rushmore")
+display.wes.palette(6, "BottleRocket")
 ```
 
 ## Gallery of examples
