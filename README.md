@@ -202,6 +202,7 @@ display.wes.palette(5, "Darjeeling2")
 ![](figure/darjeeling2.png) 
 
 
+## Fantastic Mr. Fox
 
 
 ```coffee

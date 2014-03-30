@@ -123,6 +123,7 @@ display.wes.palette(5, "Darjeeling")
 display.wes.palette(5, "Darjeeling2")
 ```
 
+## Fantastic Mr. Fox
 
 ```{r, fantasticfox, fig.height = 3}
 display.wes.palette(4, "FantasticFox")
