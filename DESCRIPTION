@@ -1,7 +1,6 @@
 Package: wesanderson
 Title: A Wes Anderson Palette Generator
-Description: Palettes generated mostly from
-    \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+Description: Palettes generated mostly from Wes Anderson movies
 Version: 0.3.2
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     email = "karthik.ram@gmail.com"),
