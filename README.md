@@ -26,20 +26,9 @@ __Current list of available palettes__
 
 
 
-```r
+```coffee
 library(wesanderson)
 namelist
-```
-
-
-
-```
-#> 
-#> Attaching package: 'pander'
-#> 
-#> The following object is masked from 'package:knitr':
-#> 
-#>     pandoc
 ```
 
 
@@ -60,20 +49,29 @@ namelist
 |   Darjeeling   |     5     |
 |    Rushmore    |     5     |
 |  BottleRocket  |     7     |
+|  Darjeeling2   |     5     |
 
 
-__Some examples__
+
+__See the palettes__
+
+## Grand Budapest
 
 
-```r
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
+```coffee
+display.wes.palette(4, "GrandBudapest")
 ```
 
-![](figure/ggplot1.png) 
+![](figure/grandbudapest1.png) 
+
+```coffee
+display.wes.palette(4, "GrandBudapest2")
+```
+
+![](figure/grandbudapest2.png) 
 
 
-
-```r
+```coffee
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
 geom_point(size = 3) + 
 scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
@@ -83,11 +81,85 @@ theme_gray()
 ![](figure/ggplot2.png) 
 
 
+## Moonrise Kingdom
+
+
+```coffee
+display.wes.palette(4, "Moonrise1")
+```
+
+![](figure/moonrise1.png) 
+
+```coffee
+display.wes.palette(4, "Moonrise2")
+```
+
+![](figure/moonrise2.png) 
+
+```coffee
+display.wes.palette(5, "Moonrise3")
+```
+
+![](figure/moonrise3.png) 
+
+
+## Royal Tannenbaums
+
+
+```coffee
+display.wes.palette(4, "Royal1")
+```
+
+![](figure/royal1.png) 
+
+```coffee
+display.wes.palette(5, "Royal2")
+```
+
+![](figure/royal2.png) 
+
+
+```coffee
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+scale_fill_manual(values = wes.palette(2, "Royal1"))
+```
+
+![](figure/ggplot1.png) 
+
+
+
+## Castello Cavalcanti
+
+
+```coffee
+display.wes.palette(5, "Cavalcanti")
+```
+
+![](figure/castello.png) 
+
+
+## Hotel Chevalier
+
+
+```coffee
+display.wes.palette(4, "Chevalier")
+```
+
+![](figure/chevalier.png) 
+
 
 ## The Life Aquatic
 
 
-```r
+```coffee
+display.wes.palette(5, "Zissou")
+```
+
+![](figure/lifeaquatic.png) 
+
+
+
+```coffee
 pal <- wes.palette(name = "Zissou", type = "continuous")
 image(volcano, col = pal(21))
 ```
@@ -96,7 +168,8 @@ image(volcano, col = pal(21))
 
 
 
-```r
+
+```coffee
 library(wesanderson)
 pal <- wes.palette(name = "Zissou", type = "continuous")
 # heatmap is a local dataset
@@ -111,92 +184,56 @@ scale_y_discrete(expand = c(0, 0)) + coord_equal()
 
 
 
-__See the palettes__
+## Darjeeling Limited
+
+![](http://i.imgur.com/Z2nJvOG.jpg)
 
 
-```r
-display.wes.palette(4, "GrandBudapest")
-```
-
-![](figure/palette11.png) 
-
-```r
-display.wes.palette(4, "Moonrise1")
-```
-
-![](figure/palette12.png) 
-
-```r
-display.wes.palette(4, "Royal1")
-```
-
-![](figure/palette13.png) 
-
-```r
-display.wes.palette(4, "Moonrise2")
-```
-
-![](figure/palette14.png) 
-
-```r
-display.wes.palette(5, "Cavalcanti")
-```
-
-![](figure/palette15.png) 
-
-```r
-display.wes.palette(5, "Royal2")
-```
-
-![](figure/palette16.png) 
-
-```r
-display.wes.palette(4, "GrandBudapest2")
-```
-
-![](figure/palette17.png) 
-
-```r
-display.wes.palette(5, "Moonrise3")
-```
-
-![](figure/palette18.png) 
-
-```r
-display.wes.palette(4, "Chevalier")
-```
-
-![](figure/palette19.png) 
-
-```r
-display.wes.palette(5, "Zissou")
-```
-
-![](figure/palette110.png) 
-
-```r
-display.wes.palette(4, "FantasticFox")
-```
-
-![](figure/palette111.png) 
-
-```r
+```coffee
 display.wes.palette(5, "Darjeeling")
 ```
 
-![](figure/palette112.png) 
+![](figure/darjeeling1.png) 
 
-```r
+```coffee
+display.wes.palette(5, "Darjeeling2")
+```
+
+![](figure/darjeeling2.png) 
+
+
+
+
+```coffee
+display.wes.palette(4, "FantasticFox")
+```
+
+![](figure/fantasticfox.png) 
+
+
+
+## Rushmore
+
+
+```coffee
 display.wes.palette(4, "Rushmore")
 ```
 
-![](figure/palette113.png) 
+![](figure/rushmore.png) 
 
-```r
+
+## Bottle Rocket
+
+
+```coffee
 display.wes.palette(6, "BottleRocket")
 ```
 
-![](figure/palette114.png) 
+![](figure/bottlerocket.png) 
+
+
+
+---
 
 
 ## Gallery of examples

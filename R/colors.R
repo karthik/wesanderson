@@ -3,7 +3,7 @@
 #'
 #' These are a handful of color palettes from Wes Anderson movies. 
 #' @param n Number of colors desired. Unfortunately most palettes now only have 4 or 5 colors. But hopefully we'll add more palettes soon. All color schemes are derived from the most excellent Tumblr blog: \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
-#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier}, \code{BottleRocket} 
+#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier}, \code{BottleRocket}, \code{darjeeling}, \code{darjeeling2} 
 #' @param type Set to continuous if you require a gradient of colors similar to how heat map works.
 #' @export
 #' @keywords colors
@@ -31,6 +31,8 @@ FantasticFox <- c("#DD8D29", "#E2D200", "#46ACC8", "#E58601", "#B40F20")
 Darjeeling <- c("#FF0000", "#00A08A", "#F2AD00", "#F98400", "#5BBCD6")
 Rushmore <- c("#E1BD6D", "#EABE94", "#0B775E", "#35274A" ,"#F2300F")
 BottleRocket <- c("#A42820", "#5F5647", "#9B110E", "#3F5151", "#4E2A1E", "#550307", "#0C1707")
+Darjeeling2 <- c("#ECCBAE", "#046C9A", "#D69C4E", "#ABDDDE", "#000000")
+
 if(!name %in% namelist$movies)
 	stop("Palette not found.")
 
@@ -52,7 +54,7 @@ get(name)[1:n]
 #' Display a palette
 #'
 #' @param n Number of colors desired. Unfortunately most palettes now only have 4 or 5 colors. But hopefully we'll add more palettes soon. All color schemes are derived from the most excellent Tumblr blog: \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
-#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} 
+#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} , \code{darjeeling}, \code{darjeeling2}
 #' @export
 #' @examples \dontrun{
 #'	display.wes.palette(3, "Royal1")

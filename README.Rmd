@@ -36,18 +36,21 @@ library(wesanderson)
 namelist
 ```
 
-```{r, palettes, echo = FALSE, results = "asis"}
+```{r, palettes, echo = FALSE, results = "asis", message = FALSE}
 library(pander)
 library(wesanderson)
 pandoc.table(namelist, style = "rmarkdown")
 ```
 
-__Some examples__
 
-```{r, ggplot1}
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + scale_fill_manual(values = wes.palette(2, "Royal1"))
+__See the palettes__
+
+## Grand Budapest
+
+```{r, grandbudapest, fig.height = 3}
+display.wes.palette(4, "GrandBudapest")
+display.wes.palette(4, "GrandBudapest2")
 ```
-
 ```{r, ggplot2, tidy = FALSE}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
 geom_point(size = 3) + 
@@ -55,13 +58,49 @@ scale_color_manual(values = wes.palette(3, "GrandBudapest")) +
 theme_gray()
 ```
 
+## Moonrise Kingdom
+
+```{r, moonrise, fig.height = 3}
+display.wes.palette(4, "Moonrise1")
+display.wes.palette(4, "Moonrise2")
+display.wes.palette(5, "Moonrise3")
+```
+
+## Royal Tannenbaums
+
+```{r, royal, fig.height = 3}
+display.wes.palette(4, "Royal1")
+display.wes.palette(5, "Royal2")
+```
+```{r, ggplot1, tidy = FALSE}
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+scale_fill_manual(values = wes.palette(2, "Royal1"))
+```
+
+
+## Castello Cavalcanti
+
+```{r, castello, fig.height = 3}
+display.wes.palette(5, "Cavalcanti")
+```
+
+## Hotel Chevalier
+
+```{r, chevalier, fig.height = 3}
+display.wes.palette(4, "Chevalier")
+```
 
 ## The Life Aquatic
+
+```{r, lifeaquatic, fig.height = 3}
+display.wes.palette(5, "Zissou")
+```
 
 ```{r, volcano}
 pal <- wes.palette(name = "Zissou", type = "continuous")
 image(volcano, col = pal(21))
 ```
+
 
 ```{r, zissou_heatmap, tidy = FALSE}
 library(wesanderson)
@@ -75,24 +114,36 @@ scale_y_discrete(expand = c(0, 0)) + coord_equal()
 ```
 
 
-__See the palettes__
+## Darjeeling Limited
 
-```{r, palette1, fig.height = 3}
-display.wes.palette(4, "GrandBudapest")
-display.wes.palette(4, "Moonrise1")
-display.wes.palette(4, "Royal1")
-display.wes.palette(4, "Moonrise2")
-display.wes.palette(5, "Cavalcanti")
-display.wes.palette(5, "Royal2")
-display.wes.palette(4, "GrandBudapest2")
-display.wes.palette(5, "Moonrise3")
-display.wes.palette(4, "Chevalier")
-display.wes.palette(5, "Zissou")
-display.wes.palette(4, "FantasticFox")
+![](http://i.imgur.com/Z2nJvOG.jpg)
+
+```{r, darjeeling, fig.height = 3}
 display.wes.palette(5, "Darjeeling")
+display.wes.palette(5, "Darjeeling2")
+```
+
+
+```{r, fantasticfox, fig.height = 3}
+display.wes.palette(4, "FantasticFox")
+```
+
+
+## Rushmore
+
+```{r, rushmore, fig.height = 3}
 display.wes.palette(4, "Rushmore")
+```
+
+## Bottle Rocket
+
+```{r, bottlerocket, fig.height = 3}
 display.wes.palette(6, "BottleRocket")
 ```
+
+
+---
+
 
 ## Gallery of examples
 
