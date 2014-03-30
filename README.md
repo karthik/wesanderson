@@ -225,14 +225,7 @@ display.wes.palette(4, "Rushmore")
 
 ## Bottle Rocket
 
-
-```coffee
-display.wes.palette(6, "BottleRocket")
-```
-
-![](figure/bottlerocket.png) 
-
-
+Coming soon
 
 ---
 

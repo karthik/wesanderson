@@ -138,10 +138,7 @@ display.wes.palette(4, "Rushmore")
 
 ## Bottle Rocket
 
-```{r, bottlerocket, fig.height = 3}
-display.wes.palette(6, "BottleRocket")
-```
-
+Coming soon
 
 ---
 
