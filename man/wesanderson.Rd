@@ -8,6 +8,6 @@
 wesanderson
 }
 \details{
-list of palettes from Wes Anderson movies, inspired by \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson palettes} which provides some useful palettes from Wes Anderson films.
+List of palettes from Wes Anderson movies, inspired by \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson palettes} which provides some useful palettes from Wes Anderson films.
 }
 
