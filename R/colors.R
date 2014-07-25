@@ -3,7 +3,7 @@
 #'
 #' These are a handful of color palettes from Wes Anderson movies. 
 #' @param n Number of colors desired. Unfortunately most palettes now only have 4 or 5 colors. But hopefully we'll add more palettes soon. All color schemes are derived from the most excellent Tumblr blog: \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
-#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier}, \code{BottleRocket}, \code{darjeeling}, \code{darjeeling2} 
+#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier}, \code{BottleRocket}, \code{darjeeling}, \code{darjeeling2}, \code{Zissou2} 
 #' @param type Set to continuous if you require a gradient of colors similar to how heat map works.
 #' @export
 #' @keywords colors
@@ -55,7 +55,7 @@ get(name)[1:n]
 #' Display a palette
 #'
 #' @param n Number of colors desired. Unfortunately most palettes now only have 4 or 5 colors. But hopefully we'll add more palettes soon. All color schemes are derived from the most excellent Tumblr blog: \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
-#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} , \code{darjeeling}, \code{darjeeling2}
+#' @param  name Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} , \code{darjeeling}, \code{darjeeling2}, \code{Zissou2}
 #' @export
 #' @examples \dontrun{
 #'	display.wes.palette(3, "Royal1")

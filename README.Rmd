@@ -94,6 +94,7 @@ display.wes.palette(4, "Chevalier")
 
 ```{r, lifeaquatic, fig.height = 3}
 display.wes.palette(5, "Zissou")
+display.wes.palette(5, "Zissou2")
 ```
 
 ```{r, volcano}
