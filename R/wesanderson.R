@@ -10,5 +10,5 @@ NULL
 #' @title wesanderson
 #' @name wesanderson
 #' @docType package
-#' @details list of palettes from Wes Anderson movies
+#' @details list of palettes from Wes Anderson movies, inspired by \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson palettes} which provides some useful palettes from Wes Anderson films.
 NULL
