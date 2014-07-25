@@ -4,3 +4,5 @@ rushmore.jpg
 README.Rmd
 .travis.yml
 Makefile
+^.*\.Rproj$
+^\.Rproj\.user$

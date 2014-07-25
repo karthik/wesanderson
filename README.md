@@ -25,16 +25,14 @@ __Current list of available palettes__
 
 
 
-
-```coffee
+```r
 library(wesanderson)
 namelist
 ```
 
 
-
 |     movies     |  wesnums  |
-| -------------- | --------- |
+|:--------------:|:---------:|
 | GrandBudapest  |     4     |
 |   Moonrise1    |     4     |
 |     Royal1     |     4     |
@@ -50,7 +48,7 @@ namelist
 |    Rushmore    |     5     |
 |  BottleRocket  |     7     |
 |  Darjeeling2   |     5     |
-
+|    Zissou2     |     5     |
 
 
 __See the palettes__
@@ -58,20 +56,19 @@ __See the palettes__
 ## Grand Budapest
 
 
-```coffee
+```r
 display.wes.palette(4, "GrandBudapest")
 ```
 
 ![](figure/grandbudapest1.png) 
 
-```coffee
+```r
 display.wes.palette(4, "GrandBudapest2")
 ```
 
 ![](figure/grandbudapest2.png) 
 
-
-```coffee
+```r
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
 geom_point(size = 3) + 
 scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
@@ -80,46 +77,43 @@ theme_gray()
 
 ![](figure/ggplot2.png) 
 
-
 ## Moonrise Kingdom
 
 
-```coffee
+```r
 display.wes.palette(4, "Moonrise1")
 ```
 
 ![](figure/moonrise1.png) 
 
-```coffee
+```r
 display.wes.palette(4, "Moonrise2")
 ```
 
 ![](figure/moonrise2.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Moonrise3")
 ```
 
 ![](figure/moonrise3.png) 
 
-
 ## Royal Tannenbaums
 
 
-```coffee
+```r
 display.wes.palette(4, "Royal1")
 ```
 
 ![](figure/royal1.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Royal2")
 ```
 
 ![](figure/royal2.png) 
 
-
-```coffee
+```r
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
 scale_fill_manual(values = wes.palette(2, "Royal1"))
 ```
@@ -127,39 +121,41 @@ scale_fill_manual(values = wes.palette(2, "Royal1"))
 ![](figure/ggplot1.png) 
 
 
-
 ## Castello Cavalcanti
 
 
-```coffee
+```r
 display.wes.palette(5, "Cavalcanti")
 ```
 
 ![](figure/castello.png) 
 
-
 ## Hotel Chevalier
 
 
-```coffee
+```r
 display.wes.palette(4, "Chevalier")
 ```
 
 ![](figure/chevalier.png) 
 
-
 ## The Life Aquatic
 
 
-```coffee
+```r
 display.wes.palette(5, "Zissou")
 ```
 
-![](figure/lifeaquatic.png) 
+![](figure/lifeaquatic1.png) 
+
+```r
+display.wes.palette(5, "Zissou2")
+```
+
+![](figure/lifeaquatic2.png) 
 
 
-
-```coffee
+```r
 pal <- wes.palette(name = "Zissou", type = "continuous")
 image(volcano, col = pal(21))
 ```
@@ -168,8 +164,7 @@ image(volcano, col = pal(21))
 
 
 
-
-```coffee
+```r
 library(wesanderson)
 pal <- wes.palette(name = "Zissou", type = "continuous")
 # heatmap is a local dataset
@@ -183,45 +178,41 @@ scale_y_discrete(expand = c(0, 0)) + coord_equal()
 ![](figure/zissou_heatmap.png) 
 
 
-
 ## Darjeeling Limited
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
 
-```coffee
+```r
 display.wes.palette(5, "Darjeeling")
 ```
 
 ![](figure/darjeeling1.png) 
 
-```coffee
+```r
 display.wes.palette(5, "Darjeeling2")
 ```
 
 ![](figure/darjeeling2.png) 
 
-
 ## Fantastic Mr. Fox
 
 
-```coffee
+```r
 display.wes.palette(4, "FantasticFox")
 ```
 
 ![](figure/fantasticfox.png) 
 
 
-
 ## Rushmore
 
 
-```coffee
+```r
 display.wes.palette(4, "Rushmore")
 ```
 
 ![](figure/rushmore.png) 
-
 
 ## Bottle Rocket
 
