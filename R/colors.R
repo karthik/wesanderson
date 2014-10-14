@@ -15,7 +15,7 @@
 #' pal <- wes.palette(name = "Zissou", type = "continuous")
 #' image(volcano, col = pal(21))
 
-wes.palette <- function(n, name, type = FALSE) {
+wes.palette <- function(name, type = FALSE) {
 	
 GrandBudapest <- c("#F1BB7B", "#FD6467", "#5B1A18", "#D67236")
 Moonrise1 <- c("#F3DF6C", "#CEAB07", "#D5D5D3", "#24281A")
@@ -43,7 +43,7 @@ if(!type) {
 if(n > namelist[which(namelist$movies == name), 2])
 	stop("Number of requested colors greater than what palette can offer")
 
-get(name)[1:n]
+get(name)
 } 
 }
 
