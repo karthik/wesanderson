@@ -103,7 +103,7 @@ display.wes.palette(5, "Moonrise3")
 ![](figure/moonrise3.png) 
 
 
-## Royal Tannenbaums
+## Royal Tenenbaums
 
 
 ```coffee
