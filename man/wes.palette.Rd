@@ -3,19 +3,20 @@
 \alias{wes.palette}
 \title{A Wes Anderson palette generator}
 \usage{
-wes.palette(n, name, type = c("discrete", "continuous"))
+wes.palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
-\item{n}{Number of colors desired. Unfortunately most palettes now only
-have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
-schemes are derived from the most excellent Tumblr blog:
-\href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}}
-
 \item{name}{Name of desired palette. Choices are:
 \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
 \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
 \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
 \code{darjeeling}, \code{darjeeling2}}
+
+\item{n}{Number of colors desired. Unfortunately most palettes now only
+have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
+schemes are derived from the most excellent Tumblr blog:
+\href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+If omitted, uses all colours.}
 
 \item{type}{Either "continuous" or "discrete". Use continuous if you want
 to automatically interpolate between colours.}
@@ -27,9 +28,10 @@ A vector of colours.
 These are a handful of color palettes from Wes Anderson movies.
 }
 \examples{
-wes.palette(3, "Royal1")
-wes.palette(3, "GrandBudapest")
-wes.palette(5, "Cavalcanti")
+wes.palette("Royal1")
+wes.palette("GrandBudapest")
+wes.palette("Cavalcanti")
+wes.palette("Cavalcanti", 3)
 # You can also request a continuous range of colors
 pal <- wes.palette(21, name = "Zissou", type = "continuous")
 image(volcano, col = pal)

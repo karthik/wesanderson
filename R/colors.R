@@ -23,7 +23,8 @@ palettes = list(
 #' @param n Number of colors desired. Unfortunately most palettes now only
 #'   have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
 #'   schemes are derived from the most excellent Tumblr blog:
-#'   \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}
+#'   \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+#'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
 #'   \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
 #'   \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
@@ -35,18 +36,23 @@ palettes = list(
 #' @export
 #' @keywords colors
 #' @examples
-#' wes.palette(3, "Royal1")
-#' wes.palette(3, "GrandBudapest")
-#' wes.palette(5, "Cavalcanti")
+#' wes.palette("Royal1")
+#' wes.palette("GrandBudapest")
+#' wes.palette("Cavalcanti")
+#' wes.palette("Cavalcanti", 3)
 #' # You can also request a continuous range of colors
 #' pal <- wes.palette(21, name = "Zissou", type = "continuous")
 #' image(volcano, col = pal)
-wes.palette <- function(n, name, type = c("discrete", "continuous")) {
+wes.palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
   pal <- palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
+
+  if (missing(n)) {
+    n <- length(pal)
+  }
 
   if (type == "discrete" && n > length(pal)) {
     stop("Number of requested colors greater than what palette can offer")
