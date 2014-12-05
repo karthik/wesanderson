@@ -52,23 +52,19 @@ wes.palette <- function(n, name, type = c("discrete", "continuous")) {
     stop("Number of requested colors greater than what palette can offer")
   }
 
-  switch(type,
+  out <- switch(type,
     continuous = colorRampPalette(pal)(n),
     discrete = pal[1:n]
   )
+  structure(out, class = "palette", name = name)
 }
 
-#' Display a palette
-#'
-#' @inheritParams wes.palette
 #' @export
-#' @examples
-#' display.wes.palette(3, "Royal1")
-display.wes.palette <- function(n, name) {
-  pal <- wes.palette(n, name)
+print.palette <- function(x, ...) {
+  n <- length(x)
 
   image(1:n, 1, as.matrix(1:n), col = pal,
-    xlab = name, ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+    xlab = attr(x, "title"), ylab = "", xaxt = "n", yaxt = "n", bty = "n")
 }
 
 #' heatmap
