@@ -6,9 +6,16 @@
 display.wes.palette(n, name)
 }
 \arguments{
-\item{n}{Number of colors desired. Unfortunately most palettes now only have 4 or 5 colors. But hopefully we'll add more palettes soon. All color schemes are derived from the most excellent Tumblr blog: \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}}
+\item{n}{Number of colors desired. Unfortunately most palettes now only
+have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
+schemes are derived from the most excellent Tumblr blog:
+\href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}}
 
-\item{name}{Name of desired palette. Choices are: \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},  \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},  \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} , \code{darjeeling}, \code{darjeeling2}}
+\item{name}{Name of desired palette. Choices are:
+\code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
+\code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
+\code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
+\code{darjeeling}, \code{darjeeling2}}
 }
 \description{
 Display a palette
