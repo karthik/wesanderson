@@ -69,7 +69,7 @@ wes.palette <- function(name, n, type = c("discrete", "continuous")) {
 print.palette <- function(x, ...) {
   n <- length(x)
 
-  image(1:n, 1, as.matrix(1:n), col = pal,
+  image(1:n, 1, as.matrix(1:n), col = x,
     xlab = attr(x, "title"), ylab = "", xaxt = "n", yaxt = "n", bty = "n")
 }
 
