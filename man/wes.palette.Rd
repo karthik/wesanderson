@@ -32,7 +32,10 @@ wes.palette("Royal1")
 wes.palette("GrandBudapest")
 wes.palette("Cavalcanti")
 wes.palette("Cavalcanti", 3)
-# You can also request a continuous range of colors
+
+# If you need more colours than normally found in a palette, you
+# can use a continuous palette to interpolate between existing
+# colours
 pal <- wes.palette(21, name = "Zissou", type = "continuous")
 image(volcano, col = pal)
 }
