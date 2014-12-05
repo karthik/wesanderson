@@ -3,7 +3,7 @@
 \alias{wes.palette}
 \title{A Wes Anderson palette generator}
 \usage{
-wes.palette(n, name, type = FALSE)
+wes.palette(n, name, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{n}{Number of colors desired. Unfortunately most palettes now only
@@ -17,8 +17,11 @@ schemes are derived from the most excellent Tumblr blog:
 \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
 \code{darjeeling}, \code{darjeeling2}}
 
-\item{type}{Set to continuous if you require a gradient of colors similar
-to how heat map works.}
+\item{type}{Either "continuous" or "discrete". Use continuous if you want
+to automatically interpolate between colours.}
+}
+\value{
+A vector of colours.
 }
 \description{
 These are a handful of color palettes from Wes Anderson movies.
@@ -28,8 +31,8 @@ wes.palette(3, "Royal1")
 wes.palette(3, "GrandBudapest")
 wes.palette(5, "Cavalcanti")
 # You can also request a continuous range of colors
-pal <- wes.palette(name = "Zissou", type = "continuous")
-image(volcano, col = pal(21))
+pal <- wes.palette(21, name = "Zissou", type = "continuous")
+image(volcano, col = pal)
 }
 \keyword{colors}
 

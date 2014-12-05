@@ -21,8 +21,6 @@ schemes are derived from the most excellent Tumblr blog:
 Display a palette
 }
 \examples{
-\dontrun{
-	display.wes.palette(3, "Royal1")
-}
+display.wes.palette(3, "Royal1")
 }
 
