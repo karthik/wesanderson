@@ -1,4 +1,9 @@
-palettes = list(
+#' Complete list of palettes
+#'
+#' Use \code{\link{wes_palette}} to construct palettes of desired length.
+#'
+#' @export
+wes_palettes <- list(
   GrandBudapest = c("#F1BB7B", "#FD6467", "#5B1A18", "#D67236"),
   Moonrise1 = c("#F3DF6C", "#CEAB07", "#D5D5D3", "#24281A"),
   Royal1 = c("#899DA4", "#C93312", "#FAEFD1", "#DC863B"),
@@ -36,20 +41,20 @@ palettes = list(
 #' @export
 #' @keywords colors
 #' @examples
-#' wes.palette("Royal1")
-#' wes.palette("GrandBudapest")
-#' wes.palette("Cavalcanti")
-#' wes.palette("Cavalcanti", 3)
+#' wes_palette("Royal1")
+#' wes_palette("GrandBudapest")
+#' wes_palette("Cavalcanti")
+#' wes_palette("Cavalcanti", 3)
 #'
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- wes.palette(21, name = "Zissou", type = "continuous")
+#' pal <- wes_palette(21, name = "Zissou", type = "continuous")
 #' image(volcano, col = pal)
-wes.palette <- function(name, n, type = c("discrete", "continuous")) {
+wes_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
-  pal <- palettes[[name]]
+  pal <- wes_palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
 
