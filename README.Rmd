@@ -1,7 +1,4 @@
 ---
-output:
-  md_document:
-    variant: markdown_github
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -10,7 +7,8 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "figure/"
+  fig.path = "figure/",
+  fig.height = 1
 )
 ```
 
@@ -57,7 +55,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 ## Moonrise Kingdom
 
-```{r, moonrise, fig.height = 3}
+```{r, moonrise}
 wes_palette("Moonrise1")
 wes_palette("Moonrise2")
 wes_palette("Moonrise3")
@@ -65,40 +63,40 @@ wes_palette("Moonrise3")
 
 ## Royal Tannenbaums
 
-```{r, royal, fig.height = 3}
+```{r, royal}
 wes_palette("Royal1")
 wes_palette("Royal2")
 ```
 
-```{r, ggplot1, tidy = FALSE}
+```{r, ggplot1, fig.height = 3}
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
   scale_fill_manual(values = wes_palette("Royal1"))
 ```
 
 ## Castello Cavalcanti
 
-```{r, castello, fig.height = 3}
+```{r, castello}
 wes_palette("Cavalcanti")
 ```
 
 ## Hotel Chevalier
 
-```{r, chevalier, fig.height = 3}
+```{r, chevalier}
 wes_palette("Chevalier")
 ```
 
 ## The Life Aquatic
 
-```{r, lifeaquatic, fig.height = 3}
+```{r, lifeaquatic}
 wes_palette("Zissou")
 ```
 
-```{r, volcano}
+```{r, volcano, fig.height = 3}
 pal <- wes_palette("Zissou", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
-```{r, zissou_heatmap, tidy = FALSE}
+```{r, zissou_heatmap, fig.height = 3}
 pal <- wes_palette("Zissou", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
@@ -113,20 +111,20 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
-```{r, darjeeling, fig.height = 3}
+```{r, darjeeling}
 wes_palette("Darjeeling")
 wes_palette("Darjeeling2")
 ```
 
 ## Fantastic Mr. Fox
 
-```{r, fantasticfox, fig.height = 3}
+```{r, fantasticfox}
 wes_palette("FantasticFox")
 ```
 
 ## Rushmore
 
-```{r, rushmore, fig.height = 3}
+```{r, rushmore}
 wes_palette("Rushmore")
 ```
 
