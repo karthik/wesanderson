@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+Wes Anderson Palettes
+=====================
 
-# Wes Anderson Palettes
+[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
 
 ![](rushmore.jpg)
 
@@ -8,232 +10,177 @@
 
 Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
-```coffee
+Installation
+------------
+
+``` r
 install.packages("wesanderson")
 ```
 
-__Or the development version__
+**Or the development version**
 
-```coffee
+``` r
 devtools::install_github("karthik/wesanderson")
 ```
 
+Usage
+-----
 
-__Current list of available palettes__
-
-
-
-
-
-
-```coffee
+``` r
 library(wesanderson)
-namelist
+
+# See all palettes
+names(wes_palette)
+#> NULL
 ```
 
+### Grand Budapest
 
-
-|     movies     |  wesnums  |
-| -------------- | --------- |
-| GrandBudapest  |     4     |
-|   Moonrise1    |     4     |
-|     Royal1     |     4     |
-|   Moonrise2    |     4     |
-|   Cavalcanti   |     5     |
-|     Royal2     |     5     |
-| GrandBudapest2 |     4     |
-|   Moonrise3    |     5     |
-|   Chevalier    |     4     |
-|     Zissou     |     5     |
-|  FantasticFox  |     5     |
-|   Darjeeling   |     5     |
-|    Rushmore    |     5     |
-|  BottleRocket  |     7     |
-|  Darjeeling2   |     5     |
-
-
-
-__See the palettes__
-
-## Grand Budapest
-
-
-```coffee
-display.wes.palette(4, "GrandBudapest")
-```
-
-![](figure/grandbudapest1.png) 
-
-```coffee
-display.wes.palette(4, "GrandBudapest2")
-```
-
-![](figure/grandbudapest2.png) 
-
-
-```coffee
+``` r
+library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-geom_point(size = 3) + 
-scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
-theme_gray()
+  geom_point(size = 3) + 
+  scale_color_manual(values = wes_palette("GrandBudapest")) + 
+  theme_gray()
 ```
 
-![](figure/ggplot2.png) 
+![](figure/grandbudapest-1.png)
 
+Moonrise Kingdom
+----------------
 
-## Moonrise Kingdom
-
-
-```coffee
-display.wes.palette(4, "Moonrise1")
+``` r
+wes_palette("Moonrise1")
 ```
 
-![](figure/moonrise1.png) 
+![](figure/moonrise-1.png)
 
-```coffee
-display.wes.palette(4, "Moonrise2")
+``` r
+wes_palette("Moonrise2")
 ```
 
-![](figure/moonrise2.png) 
+![](figure/moonrise-2.png)
 
-```coffee
-display.wes.palette(5, "Moonrise3")
+``` r
+wes_palette("Moonrise3")
 ```
 
-![](figure/moonrise3.png) 
+![](figure/moonrise-3.png)
 
+Royal Tannenbaums
+-----------------
 
-## Royal Tenenbaums
-
-
-```coffee
-display.wes.palette(4, "Royal1")
+``` r
+wes_palette("Royal1")
 ```
 
-![](figure/royal1.png) 
+![](figure/royal-1.png)
 
-```coffee
-display.wes.palette(5, "Royal2")
+``` r
+wes_palette("Royal2")
 ```
 
-![](figure/royal2.png) 
+![](figure/royal-2.png)
 
-
-```coffee
+``` r
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
-scale_fill_manual(values = wes.palette(2, "Royal1"))
+  scale_fill_manual(values = wes_palette("Royal1"))
 ```
 
-![](figure/ggplot1.png) 
+![](figure/ggplot1-1.png)
 
+Castello Cavalcanti
+-------------------
 
-
-## Castello Cavalcanti
-
-
-```coffee
-display.wes.palette(5, "Cavalcanti")
+``` r
+wes_palette("Cavalcanti")
 ```
 
-![](figure/castello.png) 
+![](figure/castello-1.png)
 
+Hotel Chevalier
+---------------
 
-## Hotel Chevalier
-
-
-```coffee
-display.wes.palette(4, "Chevalier")
+``` r
+wes_palette("Chevalier")
 ```
 
-![](figure/chevalier.png) 
+![](figure/chevalier-1.png)
 
+The Life Aquatic
+----------------
 
-## The Life Aquatic
-
-
-```coffee
-display.wes.palette(5, "Zissou")
+``` r
+wes_palette("Zissou")
 ```
 
-![](figure/lifeaquatic.png) 
+![](figure/lifeaquatic-1.png)
 
-
-
-```coffee
-pal <- wes.palette(name = "Zissou", type = "continuous")
-image(volcano, col = pal(21))
+``` r
+pal <- wes_palette("Zissou", 21, type = "continuous")
+image(volcano, col = pal)
 ```
 
-![](figure/volcano.png) 
+![](figure/volcano-1.png)
 
-
-
-
-```coffee
-library(wesanderson)
-pal <- wes.palette(name = "Zissou", type = "continuous")
+``` r
+pal <- wes_palette("Zissou", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
- geom_tile() + 
- scale_fill_gradientn(colours = pal(100)) + 
-scale_x_discrete(expand = c(0, 0)) +
-scale_y_discrete(expand = c(0, 0)) + coord_equal() 
+  geom_tile() + 
+  scale_fill_gradientn(colours = pal) + 
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) + 
+  coord_equal() 
 ```
 
-![](figure/zissou_heatmap.png) 
+![](figure/zissou_heatmap-1.png)
 
-
-
-## Darjeeling Limited
+Darjeeling Limited
+------------------
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
-
-```coffee
-display.wes.palette(5, "Darjeeling")
+``` r
+wes_palette("Darjeeling")
 ```
 
-![](figure/darjeeling1.png) 
+![](figure/darjeeling-1.png)
 
-```coffee
-display.wes.palette(5, "Darjeeling2")
+``` r
+wes_palette("Darjeeling2")
 ```
 
-![](figure/darjeeling2.png) 
+![](figure/darjeeling-2.png)
 
+Fantastic Mr. Fox
+-----------------
 
-## Fantastic Mr. Fox
-
-
-```coffee
-display.wes.palette(4, "FantasticFox")
+``` r
+wes_palette("FantasticFox")
 ```
 
-![](figure/fantasticfox.png) 
+![](figure/fantasticfox-1.png)
 
+Rushmore
+--------
 
-
-## Rushmore
-
-
-```coffee
-display.wes.palette(4, "Rushmore")
+``` r
+wes_palette("Rushmore")
 ```
 
-![](figure/rushmore.png) 
+![](figure/rushmore-1.png)
 
-
-## Bottle Rocket
+Bottle Rocket
+-------------
 
 Coming soon
 
----
+------------------------------------------------------------------------
 
+Gallery of examples
+-------------------
 
-## Gallery of examples
-
-* [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
+-   [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
 
 ![](http://i.imgur.com/rKqbzQB.png)
-
-

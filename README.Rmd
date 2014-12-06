@@ -1,6 +1,22 @@
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/"
+)
+```
 
 # Wes Anderson Palettes
+
+[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
 
 ![](rushmore.jpg)
 
@@ -8,132 +24,110 @@
 
 Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
-```coffee
+## Installation
+
+```R
 install.packages("wesanderson")
 ```
 
 __Or the development version__
 
-```coffee
+```R
 devtools::install_github("karthik/wesanderson")
 ```
 
+## Usage
 
-__Current list of available palettes__
-
-```{r, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(
-  comment = "#>",
-  error = FALSE,
-  tidy = FALSE,
-  fig.cap=""
-)
-```
-
-
-```{r, palettes_dummy, eval = FALSE}
+```{r, palettes_dummy}
 library(wesanderson)
-namelist
+
+# See all palettes
+names(wes_palette)
 ```
 
-```{r, palettes, echo = FALSE, results = "asis", message = FALSE}
-library(pander)
-library(wesanderson)
-pandoc.table(namelist, style = "rmarkdown")
-```
-
-
-__See the palettes__
-
-## Grand Budapest
+### Grand Budapest
 
 ```{r, grandbudapest, fig.height = 3}
-display.wes.palette(4, "GrandBudapest")
-display.wes.palette(4, "GrandBudapest2")
-```
-```{r, ggplot2, tidy = FALSE}
+library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-geom_point(size = 3) + 
-scale_color_manual(values = wes.palette(3, "GrandBudapest")) + 
-theme_gray()
+  geom_point(size = 3) + 
+  scale_color_manual(values = wes_palette("GrandBudapest")) + 
+  theme_gray()
 ```
 
 ## Moonrise Kingdom
 
 ```{r, moonrise, fig.height = 3}
-display.wes.palette(4, "Moonrise1")
-display.wes.palette(4, "Moonrise2")
-display.wes.palette(5, "Moonrise3")
+wes_palette("Moonrise1")
+wes_palette("Moonrise2")
+wes_palette("Moonrise3")
 ```
 
 ## Royal Tannenbaums
 
 ```{r, royal, fig.height = 3}
-display.wes.palette(4, "Royal1")
-display.wes.palette(5, "Royal2")
-```
-```{r, ggplot1, tidy = FALSE}
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
-scale_fill_manual(values = wes.palette(2, "Royal1"))
+wes_palette("Royal1")
+wes_palette("Royal2")
 ```
 
+```{r, ggplot1, tidy = FALSE}
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+  scale_fill_manual(values = wes_palette("Royal1"))
+```
 
 ## Castello Cavalcanti
 
 ```{r, castello, fig.height = 3}
-display.wes.palette(5, "Cavalcanti")
+wes_palette("Cavalcanti")
 ```
 
 ## Hotel Chevalier
 
 ```{r, chevalier, fig.height = 3}
-display.wes.palette(4, "Chevalier")
+wes_palette("Chevalier")
 ```
 
 ## The Life Aquatic
 
 ```{r, lifeaquatic, fig.height = 3}
-display.wes.palette(5, "Zissou")
+wes_palette("Zissou")
 ```
 
 ```{r, volcano}
-pal <- wes.palette(name = "Zissou", type = "continuous")
-image(volcano, col = pal(21))
+pal <- wes_palette("Zissou", 21, type = "continuous")
+image(volcano, col = pal)
 ```
-
 
 ```{r, zissou_heatmap, tidy = FALSE}
-library(wesanderson)
-pal <- wes.palette(name = "Zissou", type = "continuous")
+pal <- wes_palette("Zissou", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
- geom_tile() + 
- scale_fill_gradientn(colours = pal(100)) + 
-scale_x_discrete(expand = c(0, 0)) +
-scale_y_discrete(expand = c(0, 0)) + coord_equal() 
+  geom_tile() + 
+  scale_fill_gradientn(colours = pal) + 
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) + 
+  coord_equal() 
 ```
-
 
 ## Darjeeling Limited
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
 ```{r, darjeeling, fig.height = 3}
-display.wes.palette(5, "Darjeeling")
-display.wes.palette(5, "Darjeeling2")
+wes_palette("Darjeeling")
+wes_palette("Darjeeling2")
 ```
 
 ## Fantastic Mr. Fox
 
 ```{r, fantasticfox, fig.height = 3}
-display.wes.palette(4, "FantasticFox")
+wes_palette("FantasticFox")
 ```
-
 
 ## Rushmore
 
 ```{r, rushmore, fig.height = 3}
-display.wes.palette(4, "Rushmore")
+wes_palette("Rushmore")
 ```
 
 ## Bottle Rocket
@@ -141,7 +135,6 @@ display.wes.palette(4, "Rushmore")
 Coming soon
 
 ---
-
 
 ## Gallery of examples
 
