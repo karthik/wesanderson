@@ -12,3 +12,5 @@ License: MIT + file LICENSE
 LazyData: true
 Suggests:
     ggplot2
+URL: https://github.com/karthik/wesanderson
+BugReports: https://github.com/karthik/wesanderson/issues
