@@ -4,6 +4,8 @@ Description: Palettes generated mostly from Wes Anderson movies
 Version: 0.3.2
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     email = "karthik.ram@gmail.com"),
+    person("Hadley", "Wickham", role = "aut",
+    email = "h.wickham@gmail.com"),
     person("Clark", "Richards", role = "ctb",
     email = "crichards@whoi.edu"))
 Depends:
