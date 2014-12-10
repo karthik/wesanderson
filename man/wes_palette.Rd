@@ -10,7 +10,7 @@ wes_palette(name, n, type = c("discrete", "continuous"))
 \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
 \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
 \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
-\code{darjeeling}, \code{darjeeling2} , \code{Zissou}}
+\code{darjeeling}, \code{darjeeling2}}
 
 \item{n}{Number of colors desired. Unfortunately most palettes now only
 have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
