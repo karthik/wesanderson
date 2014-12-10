@@ -6,3 +6,4 @@ Makefile
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+screenshots/
