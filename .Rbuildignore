@@ -7,3 +7,4 @@ Makefile
 ^\.Rproj\.user$
 ^README\.Rmd$
 screenshots/
+README.md
