@@ -10,3 +10,4 @@ screenshots/
 README.md
 README.html
 
+^cran-comments\.md$
