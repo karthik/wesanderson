@@ -8,3 +8,5 @@ Makefile
 ^README\.Rmd$
 screenshots/
 README.md
+README.html
+
