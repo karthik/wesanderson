@@ -130,7 +130,9 @@ wes_palette("Rushmore")
 
 ## Bottle Rocket
 
-Coming soon
+```{r, bottlerocket}
+wes_palette("BottleRocket2")
+```
 
 ---
 
