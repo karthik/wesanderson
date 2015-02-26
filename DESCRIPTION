@@ -7,7 +7,9 @@ Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     person("Hadley", "Wickham", role = "aut",
     email = "h.wickham@gmail.com"),
     person("Clark", "Richards", role = "ctb",
-    email = "crichards@whoi.edu"))
+    email = "crichards@whoi.edu"),
+    person("Aaron", "Baggett", role = "ctb",
+    email = "aaronbaggett@gmail.com"))
 Depends:
     R (>= 3.0)
 License: MIT + file LICENSE
