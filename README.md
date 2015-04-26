@@ -3,7 +3,7 @@ Wes Anderson Palettes
 =====================
 
 [![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
+[![Build Status](http://cranlogs.r-pkg.org/badges/wesanderson)](http://cran.rstudio.com/web/packages/wesanderson/index.html)  
 
 ![](rushmore.jpg)
 
