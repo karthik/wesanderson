@@ -62,7 +62,7 @@ wes_palette("Moonrise2")
 wes_palette("Moonrise3")
 ```
 
-## Royal Tannenbaums
+## Royal Tenenbaums
 
 ```{r, royal}
 wes_palette("Royal1")
