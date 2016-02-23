@@ -1,7 +1,8 @@
 Package: wesanderson
 Title: A Wes Anderson Palette Generator
-Description: Palettes generated mostly from Wes Anderson movies
-Version: 0.3.3.99
+Description: Palettes generated mostly from 'Wes Anderson' movies.
+Date: 2016-02-23
+Version: 0.3.4
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     email = "karthik.ram@gmail.com"),
     person("Hadley", "Wickham", role = "aut",
@@ -18,3 +19,4 @@ Suggests:
     ggplot2
 URL: https://github.com/karthik/wesanderson
 BugReports: https://github.com/karthik/wesanderson/issues
+RoxygenNote: 5.0.1

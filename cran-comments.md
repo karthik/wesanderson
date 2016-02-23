@@ -1,1 +1,1 @@
-Updated package by fixing few bugs and refactoring code.
+In Version 0.3.3 fixed malformed description and made minor updates to documentation.
