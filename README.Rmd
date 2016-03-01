@@ -41,7 +41,7 @@ devtools::install_github("karthik/wesanderson")
 library(wesanderson)
 
 # See all palettes
-names(wes_palette)
+names(wes_palettes)
 ```
 
 ### Grand Budapest
