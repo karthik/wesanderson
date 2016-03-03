@@ -201,5 +201,5 @@ wes_palette("BottleRocket2")
 
 * [osmplotr](https://github.com/mpadge/osmplotr)
 
-![][londonmap](https://raw.githubusercontent.com/mpadge/osmplotr/master/figure/map6.png)
+![londonmap](https://raw.githubusercontent.com/mpadge/osmplotr/master/figure/map6.png)
 
