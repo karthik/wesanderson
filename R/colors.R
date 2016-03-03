@@ -34,8 +34,9 @@ wes_palettes <- list(
 #' @param name Name of desired palette. Choices are:
 #'   \code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
 #'   \code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
-#'   \code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
-#'   \code{darjeeling}, \code{darjeeling2}
+#'   \code{Moonrise3},  \code{Chevalier} , \code{Zissou},
+#'   \code{FantasticFox}, \code{Darjeeling}, \code{Rushmore},
+#'   \code{BottleRocket}, \code{Darjeeling2}, \code{BottleRocket2}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #' @return A vector of colours.

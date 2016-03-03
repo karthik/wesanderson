@@ -199,4 +199,7 @@ wes_palette("BottleRocket2")
 
 ![](http://i.imgur.com/rKqbzQB.png)
 
+* [osmplotr](https://github.com/mpadge/osmplotr)
+
+![][londonmap](https://raw.githubusercontent.com/mpadge/osmplotr/master/figure/map6.png)
 
