@@ -1,7 +1,7 @@
 ---
-output: 
-  html_document: 
-    keep_md: yes
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -132,12 +132,10 @@ wes_palette("Cavalcanti")
 
 ### The Grand Budapest Hotel (2014)
 
-
 ```{r, grandbudapest}
 wes_palette("GrandBudapest1")
 wes_palette("GrandBudapest2")
 ```
-
 
 ```{r, grandbudapest_plot, fig.height = 3}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
