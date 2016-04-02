@@ -57,7 +57,7 @@ wes_palette("BottleRocket2")
 ### Rushmore (1998)
 
 ```{r, rushmore}
-wes_palette("Rushmore")
+wes_palette("Rushmore1")
 ```
 
 ### The Royal Tenenbaums (2001)
@@ -76,16 +76,16 @@ ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
 ### The Life Aquatic with Steve Zissou (2004)
 
 ```{r, lifeaquatic}
-wes_palette("Zissou")
+wes_palette("Zissou1")
 ```
 
 ```{r, volcano, fig.height = 3}
-pal <- wes_palette("Zissou", 21, type = "continuous")
+pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ```{r, zissou_heatmap, fig.height = 3}
-pal <- wes_palette("Zissou", 100, type = "continuous")
+pal <- wes_palette("Zissou1", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -107,13 +107,13 @@ wes_palette("Darjeeling2")
 ### Hotel Chevalier (2007)
 
 ```{r, chevalier}
-wes_palette("Chevalier")
+wes_palette("Chevalier1")
 ```
 
 ### Fantastic Mr. Fox (2009)
 
 ```{r, fantasticfox}
-wes_palette("FantasticFox")
+wes_palette("FantasticFox1")
 ```
 
 ### Moonrise Kingdom (2012)
@@ -127,7 +127,7 @@ wes_palette("Moonrise3")
 ### Castello Cavalcanti (2013)
 
 ```{r, castello}
-wes_palette("Cavalcanti")
+wes_palette("Cavalcanti1")
 ```
 
 ### The Grand Budapest Hotel (2014)

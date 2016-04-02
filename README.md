@@ -32,10 +32,10 @@ library("wesanderson")
 
 # See all palettes
 names(wes_palettes)
-#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore"       "Royal1"        
-#>  [5] "Royal2"         "Zissou"         "Darjeeling1"    "Darjeeling2"   
-#>  [9] "Chevalier"      "FantasticFox"   "Moonrise1"      "Moonrise2"     
-#> [13] "Moonrise3"      "Cavalcanti"     "GrandBudapest1" "GrandBudapest2"
+#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Royal1"        
+#>  [5] "Royal2"         "Zissou1"        "Darjeeling1"    "Darjeeling2"   
+#>  [9] "Chevalier1"     "FantasticFox1"  "Moonrise1"      "Moonrise2"     
+#> [13] "Moonrise3"      "Cavalcanti1"    "GrandBudapest1" "GrandBudapest2"
 ```
 
 ### Bottle Rocket (1996)
@@ -55,7 +55,7 @@ wes_palette("BottleRocket2")
 ### Rushmore (1998)
 
 ``` r
-wes_palette("Rushmore")
+wes_palette("Rushmore1")
 ```
 
 ![](figure/rushmore-1.png)
@@ -85,20 +85,20 @@ ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
 ### The Life Aquatic with Steve Zissou (2004)
 
 ``` r
-wes_palette("Zissou")
+wes_palette("Zissou1")
 ```
 
 ![](figure/lifeaquatic-1.png)
 
 ``` r
-pal <- wes_palette("Zissou", 21, type = "continuous")
+pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ![](figure/volcano-1.png)
 
 ``` r
-pal <- wes_palette("Zissou", 100, type = "continuous")
+pal <- wes_palette("Zissou1", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -129,7 +129,7 @@ wes_palette("Darjeeling2")
 ### Hotel Chevalier (2007)
 
 ``` r
-wes_palette("Chevalier")
+wes_palette("Chevalier1")
 ```
 
 ![](figure/chevalier-1.png)
@@ -137,7 +137,7 @@ wes_palette("Chevalier")
 ### Fantastic Mr. Fox (2009)
 
 ``` r
-wes_palette("FantasticFox")
+wes_palette("FantasticFox1")
 ```
 
 ![](figure/fantasticfox-1.png)
@@ -165,7 +165,7 @@ wes_palette("Moonrise3")
 ### Castello Cavalcanti (2013)
 
 ``` r
-wes_palette("Cavalcanti")
+wes_palette("Cavalcanti1")
 ```
 
 ![](figure/castello-1.png)
