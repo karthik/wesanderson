@@ -188,8 +188,9 @@ wes_palette("Rushmore")
 
 ```r
 wes_palette("BottleRocket2")
-#> Error in wes_palette("BottleRocket2"): Palette not found.
 ```
+
+![plot of chunk bottlerocket](figure/bottlerocket-1.png)
 
 ---
 
