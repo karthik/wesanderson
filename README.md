@@ -187,10 +187,10 @@ wes_palette("Rushmore")
 
 
 ```r
-wes_palette("BottleRocket2")
+wes_palette("BottleRocket")
 ```
 
-![plot of chunk bottlerocket](figure/bottlerocket-1.png)
+![plot of chunk bottlerocket](figure/bottlerocket.png)
 
 ---
 

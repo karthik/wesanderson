@@ -132,7 +132,7 @@ wes_palette("Rushmore")
 ## Bottle Rocket
 
 ```{r, bottlerocket}
-wes_palette("BottleRocket2")
+wes_palette("BottleRocket")
 ```
 
 ---
