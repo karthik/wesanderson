@@ -39,6 +39,7 @@ wes_palettes <- list(
 #'   \code{GrandBudapest1}, \code{GrandBudapest2}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
+#'   @importFrom graphics rgb rect par image text
 #' @return A vector of colours.
 #' @export
 #' @keywords colors
@@ -69,13 +70,15 @@ wes_palette <- function(name, n, type = c("discrete", "continuous")) {
   }
 
   out <- switch(type,
-    continuous = colorRampPalette(pal)(n),
+    continuous = grDevices::colorRampPalette(pal)(n),
     discrete = pal[1:n]
   )
   structure(out, class = "palette", name = name)
 }
 
 #' @export
+#' @importFrom graphics rect par image text
+#' @importFrom grDevices rgb
 print.palette <- function(x, ...) {
   n <- length(x)
   old <- par(mar = c(0.5, 0.5, 0.5, 0.5))

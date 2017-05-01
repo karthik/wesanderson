@@ -3,3 +3,8 @@
 S3method(print,palette)
 export(wes_palette)
 export(wes_palettes)
+importFrom(grDevices,rgb)
+importFrom(graphics,image)
+importFrom(graphics,par)
+importFrom(graphics,rect)
+importFrom(graphics,text)

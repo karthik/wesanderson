@@ -21,7 +21,8 @@ schemes are derived from the most excellent Tumblr blog:
 If omitted, uses all colours.}
 
 \item{type}{Either "continuous" or "discrete". Use continuous if you want
-to automatically interpolate between colours.}
+to automatically interpolate between colours.
+@importFrom graphics rgb rect par image text}
 }
 \value{
 A vector of colours.
@@ -42,4 +43,3 @@ pal <- wes_palette(21, name = "Zissou1", type = "continuous")
 image(volcano, col = pal)
 }
 \keyword{colors}
-

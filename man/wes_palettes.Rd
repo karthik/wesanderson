@@ -12,4 +12,3 @@ wes_palettes
 Use \code{\link{wes_palette}} to construct palettes of desired length.
 }
 \keyword{datasets}
-

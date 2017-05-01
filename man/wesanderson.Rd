@@ -11,4 +11,3 @@ list of palettes from Wes Anderson movies
 \details{
 list of palettes from Wes Anderson movies
 }
-

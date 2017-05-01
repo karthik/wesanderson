@@ -12,4 +12,3 @@ heatmap
 A heatmap example
 }
 \keyword{datasets}
-
