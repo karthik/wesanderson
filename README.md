@@ -1,13 +1,8 @@
----
----
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+Wes Anderson Palettes
+=====================
 
-
-
-# Wes Anderson Palettes
-
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
+[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
 
 ![](rushmore.jpg)
@@ -16,127 +11,94 @@
 
 Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
-## Installation
+Installation
+------------
 
-```R
+``` r
 install.packages("wesanderson")
 ```
 
-__Or the development version__
+**Or the development version**
 
-```R
+``` r
 devtools::install_github("karthik/wesanderson")
 ```
 
-## Usage
+Usage
+-----
 
-
-```r
-library(wesanderson)
+``` r
+library("wesanderson")
 
 # See all palettes
 names(wes_palettes)
-#>  [1] "GrandBudapest"  "Moonrise1"      "Royal1"         "Moonrise2"     
-#>  [5] "Cavalcanti"     "Royal2"         "GrandBudapest2" "Moonrise3"     
-#>  [9] "Chevalier"      "Zissou"         "FantasticFox"   "Darjeeling"    
-#> [13] "Rushmore"       "BottleRocket"   "Darjeeling2"
+#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Royal1"        
+#>  [5] "Royal2"         "Zissou1"        "Darjeeling1"    "Darjeeling2"   
+#>  [9] "Chevalier1"     "FantasticFox1"  "Moonrise1"      "Moonrise2"     
+#> [13] "Moonrise3"      "Cavalcanti1"    "GrandBudapest1" "GrandBudapest2"
 ```
 
-### Grand Budapest
+### Bottle Rocket (1996)
 
-
-```r
-library(ggplot2)
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-  geom_point(size = 3) + 
-  scale_color_manual(values = wes_palette("GrandBudapest")) + 
-  theme_gray()
+``` r
+wes_palette("BottleRocket1")
 ```
 
-![plot of chunk grandbudapest](figure/grandbudapest-1.png)
+![](figure/bottlerocket1-1.png)
 
-## Moonrise Kingdom
-
-
-```r
-wes_palette("Moonrise1")
+``` r
+wes_palette("BottleRocket2")
 ```
 
-![plot of chunk moonrise](figure/moonrise-1.png)
+![](figure/bottlerocket1-2.png)
 
-```r
-wes_palette("Moonrise2")
+### Rushmore (1998)
+
+``` r
+wes_palette("Rushmore1")
 ```
 
-![plot of chunk moonrise](figure/moonrise-2.png)
+![](figure/rushmore-1.png)
 
-```r
-wes_palette("Moonrise3")
-```
+### The Royal Tenenbaums (2001)
 
-![plot of chunk moonrise](figure/moonrise-3.png)
-
-## Royal Tenenbaums
-
-
-```r
+``` r
 wes_palette("Royal1")
 ```
 
-![plot of chunk royal](figure/royal-1.png)
+![](figure/royal-1.png)
 
-```r
+``` r
 wes_palette("Royal2")
 ```
 
-![plot of chunk royal](figure/royal-2.png)
+![](figure/royal-2.png)
 
-
-```r
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+``` r
+library("ggplot2")
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
   scale_fill_manual(values = wes_palette("Royal1"))
 ```
 
-![plot of chunk ggplot1](figure/ggplot1-1.png)
+![](figure/ggplot1-1.png)
 
-## Castello Cavalcanti
+### The Life Aquatic with Steve Zissou (2004)
 
-
-```r
-wes_palette("Cavalcanti")
+``` r
+wes_palette("Zissou1")
 ```
 
-![plot of chunk castello](figure/castello-1.png)
+![](figure/lifeaquatic-1.png)
 
-## Hotel Chevalier
-
-
-```r
-wes_palette("Chevalier")
-```
-
-![plot of chunk chevalier](figure/chevalier-1.png)
-
-## The Life Aquatic
-
-
-```r
-wes_palette("Zissou")
-```
-
-![plot of chunk lifeaquatic](figure/lifeaquatic-1.png)
-
-
-```r
-pal <- wes_palette("Zissou", 21, type = "continuous")
+``` r
+pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
-![plot of chunk volcano](figure/volcano-1.png)
+![](figure/volcano-1.png)
 
-
-```r
-pal <- wes_palette("Zissou", 100, type = "continuous")
+``` r
+pal <- wes_palette("Zissou1", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -146,57 +108,94 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-![plot of chunk zissou_heatmap](figure/zissou_heatmap-1.png)
+![](figure/zissou_heatmap-1.png)
 
-## Darjeeling Limited
+### The Darjeeling Limited (2007)
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
-
-```r
-wes_palette("Darjeeling")
+``` r
+wes_palette("Darjeeling1")
 ```
 
-![plot of chunk darjeeling](figure/darjeeling-1.png)
+![](figure/darjeeling-1.png)
 
-```r
+``` r
 wes_palette("Darjeeling2")
 ```
 
-![plot of chunk darjeeling](figure/darjeeling-2.png)
+![](figure/darjeeling-2.png)
 
-## Fantastic Mr. Fox
+### Hotel Chevalier (2007)
 
-
-```r
-wes_palette("FantasticFox")
+``` r
+wes_palette("Chevalier1")
 ```
 
-![plot of chunk fantasticfox](figure/fantasticfox-1.png)
+![](figure/chevalier-1.png)
 
-## Rushmore
+### Fantastic Mr. Fox (2009)
 
-
-```r
-wes_palette("Rushmore")
+``` r
+wes_palette("FantasticFox1")
 ```
 
-![plot of chunk rushmore](figure/rushmore-1.png)
+![](figure/fantasticfox-1.png)
 
-## Bottle Rocket
+### Moonrise Kingdom (2012)
 
-
-```r
-wes_palette("BottleRocket2")
-#> Error in wes_palette("BottleRocket2"): Palette not found.
+``` r
+wes_palette("Moonrise1")
 ```
 
----
+![](figure/moonrise-1.png)
 
-## Gallery of examples
+``` r
+wes_palette("Moonrise2")
+```
 
-* [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
+![](figure/moonrise-2.png)
+
+``` r
+wes_palette("Moonrise3")
+```
+
+![](figure/moonrise-3.png)
+
+### Castello Cavalcanti (2013)
+
+``` r
+wes_palette("Cavalcanti1")
+```
+
+![](figure/castello-1.png)
+
+### The Grand Budapest Hotel (2014)
+
+``` r
+wes_palette("GrandBudapest1")
+```
+
+![](figure/grandbudapest-1.png)
+
+``` r
+wes_palette("GrandBudapest2")
+```
+
+![](figure/grandbudapest-2.png)
+
+``` r
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+  geom_point(size = 3) + 
+  scale_color_manual(values = wes_palette("GrandBudapest1")) + 
+  theme_gray()
+```
+
+![](figure/grandbudapest_plot-1.png)
+
+Gallery of examples
+-------------------
+
+-   [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
 
 ![](http://i.imgur.com/rKqbzQB.png)
-
-

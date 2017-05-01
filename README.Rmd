@@ -1,4 +1,7 @@
 ---
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -38,31 +41,26 @@ devtools::install_github("karthik/wesanderson")
 ## Usage
 
 ```{r, palettes_dummy}
-library(wesanderson)
+library("wesanderson")
 
 # See all palettes
 names(wes_palettes)
 ```
 
-### Grand Budapest
+### Bottle Rocket (1996)
 
-```{r, grandbudapest, fig.height = 3}
-library(ggplot2)
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-  geom_point(size = 3) + 
-  scale_color_manual(values = wes_palette("GrandBudapest")) + 
-  theme_gray()
+```{r, bottlerocket1}
+wes_palette("BottleRocket1")
+wes_palette("BottleRocket2")
 ```
 
-## Moonrise Kingdom
+### Rushmore (1998)
 
-```{r, moonrise}
-wes_palette("Moonrise1")
-wes_palette("Moonrise2")
-wes_palette("Moonrise3")
+```{r, rushmore}
+wes_palette("Rushmore1")
 ```
 
-## Royal Tenenbaums
+### The Royal Tenenbaums (2001)
 
 ```{r, royal}
 wes_palette("Royal1")
@@ -70,35 +68,24 @@ wes_palette("Royal2")
 ```
 
 ```{r, ggplot1, fig.height = 3}
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) + 
+library("ggplot2")
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
   scale_fill_manual(values = wes_palette("Royal1"))
 ```
 
-## Castello Cavalcanti
-
-```{r, castello}
-wes_palette("Cavalcanti")
-```
-
-## Hotel Chevalier
-
-```{r, chevalier}
-wes_palette("Chevalier")
-```
-
-## The Life Aquatic
+### The Life Aquatic with Steve Zissou (2004)
 
 ```{r, lifeaquatic}
-wes_palette("Zissou")
+wes_palette("Zissou1")
 ```
 
 ```{r, volcano, fig.height = 3}
-pal <- wes_palette("Zissou", 21, type = "continuous")
+pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ```{r, zissou_heatmap, fig.height = 3}
-pal <- wes_palette("Zissou", 100, type = "continuous")
+pal <- wes_palette("Zissou1", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -108,39 +95,58 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-## Darjeeling Limited
+### The Darjeeling Limited (2007)
 
 ![](http://i.imgur.com/Z2nJvOG.jpg)
 
 ```{r, darjeeling}
-wes_palette("Darjeeling")
+wes_palette("Darjeeling1")
 wes_palette("Darjeeling2")
 ```
 
-## Fantastic Mr. Fox
+### Hotel Chevalier (2007)
+
+```{r, chevalier}
+wes_palette("Chevalier1")
+```
+
+### Fantastic Mr. Fox (2009)
 
 ```{r, fantasticfox}
-wes_palette("FantasticFox")
+wes_palette("FantasticFox1")
 ```
 
-## Rushmore
+### Moonrise Kingdom (2012)
 
-```{r, rushmore}
-wes_palette("Rushmore")
+```{r, moonrise}
+wes_palette("Moonrise1")
+wes_palette("Moonrise2")
+wes_palette("Moonrise3")
 ```
 
-## Bottle Rocket
+### Castello Cavalcanti (2013)
 
-```{r, bottlerocket}
-wes_palette("BottleRocket2")
+```{r, castello}
+wes_palette("Cavalcanti1")
 ```
 
----
+### The Grand Budapest Hotel (2014)
+
+```{r, grandbudapest}
+wes_palette("GrandBudapest1")
+wes_palette("GrandBudapest2")
+```
+
+```{r, grandbudapest_plot, fig.height = 3}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+  geom_point(size = 3) + 
+  scale_color_manual(values = wes_palette("GrandBudapest1")) + 
+  theme_gray()
+```
 
 ## Gallery of examples
 
 * [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
 
 ![](http://i.imgur.com/rKqbzQB.png)
-
 

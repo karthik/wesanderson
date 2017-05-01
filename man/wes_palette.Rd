@@ -8,10 +8,11 @@ wes_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette. Choices are:
-\code{GrandBudapest}, \code{Moonrise1},  \code{Royal1},
-\code{Moonrise2}, \code{Cavalcanti},  \code{Royal2}, \code{GrandBudapest2},
-\code{Moonrise3},  \code{Chevalier} , \code{BottleRocket} ,
-\code{darjeeling}, \code{darjeeling2}}
+\code{BottleRocket1}, \code{BottleRocket2},  \code{Rushmore1},
+\code{Royal1}, \code{Royal2},  \code{Zissou1}, \code{Darjeeling1},
+\code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
+\code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
+\code{GrandBudapest1}, \code{GrandBudapest2}}
 
 \item{n}{Number of colors desired. Unfortunately most palettes now only
 have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
@@ -30,14 +31,14 @@ These are a handful of color palettes from Wes Anderson movies.
 }
 \examples{
 wes_palette("Royal1")
-wes_palette("GrandBudapest")
-wes_palette("Cavalcanti")
-wes_palette("Cavalcanti", 3)
+wes_palette("GrandBudapest1")
+wes_palette("Cavalcanti1")
+wes_palette("Cavalcanti1", 3)
 
 # If you need more colours than normally found in a palette, you
 # can use a continuous palette to interpolate between existing
 # colours
-pal <- wes_palette(21, name = "Zissou", type = "continuous")
+pal <- wes_palette(21, name = "Zissou1", type = "continuous")
 image(volcano, col = pal)
 }
 \keyword{colors}
