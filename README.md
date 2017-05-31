@@ -2,8 +2,7 @@
 Wes Anderson Palettes
 =====================
 
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
+[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson) [![CRAN version](http://www.r-pkg.org/badges/version-last-release/wesanderson)](https://cran.r-project.org/package=wesanderson) \[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
 
 ![](rushmore.jpg)
 
@@ -192,10 +191,3 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 ```
 
 ![](figure/grandbudapest_plot-1.png)
-
-Gallery of examples
--------------------
-
--   [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
-
-![](http://i.imgur.com/rKqbzQB.png)
