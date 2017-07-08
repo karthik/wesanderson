@@ -127,7 +127,7 @@ wes_palette("Moonrise3")
 ### Castello Cavalcanti (2013)
 
 ```{r, castello}
-wes_palette("Cavalcanti1")
+wes_palette("Cavalcanti")
 ```
 
 ### The Grand Budapest Hotel (2014)
