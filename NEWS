@@ -1,5 +1,11 @@
 Version 0.3.3
 ==============
+* Fixed issues with mismatched palette names
+* Added new palettes
+* Minor cleanup
+
+Version 0.3.3
+==============
 * Minor fixes to documentation
 * Fixed malformed description
 
