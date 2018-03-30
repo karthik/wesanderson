@@ -11,3 +11,4 @@ README.md
 README.html
 
 ^cran-comments\.md$
+^codemeta\.json$

@@ -1,0 +1,89 @@
+{
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
+  "@type": "SoftwareSourceCode",
+  "identifier": "wesanderson",
+  "description": "Palettes generated mostly from 'Wes Anderson' movies.",
+  "name": "wesanderson: A Wes Anderson Palette Generator",
+  "codeRepository": "https://github.com/karthik/wesanderson",
+  "issueTracker": "https://github.com/karthik/wesanderson/issues",
+  "datePublished": "2016-02-23",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "0.3.4",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "version": "3.4.4",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 3.4.4 (2018-03-15)",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Central R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Karthik",
+      "familyName": "Ram",
+      "email": "karthik.ram@gmail.com",
+      "@id": "https://orcid.org/0000-0002-0233-1757"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Hadley",
+      "familyName": "Wickham",
+      "email": "h.wickham@gmail.com"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Clark",
+      "familyName": "Richards",
+      "email": "crichards@whoi.edu"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Aaron",
+      "familyName": "Baggett",
+      "email": "aaronbaggett@gmail.com"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Karthik",
+    "familyName": "Ram",
+    "email": "karthik.ram@gmail.com",
+    "@id": "https://orcid.org/0000-0002-0233-1757"
+  },
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "ggplot2",
+      "name": "ggplot2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": "3.0"
+    }
+  ],
+  "contIntegration": "https://travis-ci.org/karthik/wesanderson",
+  "releaseNotes": "https://github.com/karthik/wesanderson/blob/master/NEWS",
+  "readme": "https://github.com/karthik/wesanderson/blob/master/README.md",
+  "fileSize": "5.588KB"
+}
