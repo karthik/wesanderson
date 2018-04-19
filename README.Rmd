@@ -79,6 +79,15 @@ ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
 wes_palette("Zissou1")
 ```
 
+### The Isle of Dogs
+
+```{r, isleofdogs}
+wes_palette("IsleofDogs1")
+wes_palette("IsleofDogs2")
+
+```
+
+
 ```{r, volcano, fig.height = 3}
 pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)

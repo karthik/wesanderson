@@ -32,10 +32,11 @@ library("wesanderson")
 
 # See all palettes
 names(wes_palettes)
-#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Royal1"        
-#>  [5] "Royal2"         "Zissou1"        "Darjeeling1"    "Darjeeling2"   
-#>  [9] "Chevalier1"     "FantasticFox1"  "Moonrise1"      "Moonrise2"     
-#> [13] "Moonrise3"      "Cavalcanti1"    "GrandBudapest1" "GrandBudapest2"
+#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Rushmore"      
+#>  [5] "Royal1"         "Royal2"         "Zissou1"        "Darjeeling1"   
+#>  [9] "Darjeeling2"    "Chevalier1"     "FantasticFox1"  "Moonrise1"     
+#> [13] "Moonrise2"      "Moonrise3"      "Cavalcanti1"    "GrandBudapest1"
+#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"
 ```
 
 ### Bottle Rocket (1996)
@@ -89,6 +90,20 @@ wes_palette("Zissou1")
 ```
 
 ![](figure/lifeaquatic-1.png)
+
+### The Isle of Dogs
+
+``` r
+wes_palette("IsleofDogs1")
+```
+
+![](figure/isleofdogs-1.png)
+
+``` r
+wes_palette("IsleofDogs2")
+```
+
+![](figure/isleofdogs-2.png)
 
 ``` r
 pal <- wes_palette("Zissou1", 21, type = "continuous")
