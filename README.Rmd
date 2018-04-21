@@ -28,13 +28,13 @@ Tired of generic mass produced palettes for your plots? Short of adding an owl a
 
 ## Installation
 
-```R
+```r
 install.packages("wesanderson")
 ```
 
 __Or the development version__
 
-```R
+```r
 devtools::install_github("karthik/wesanderson")
 ```
 
@@ -46,6 +46,8 @@ library("wesanderson")
 # See all palettes
 names(wes_palettes)
 ```
+
+## Palettes
 
 ### Bottle Rocket (1996)
 
@@ -79,14 +81,6 @@ ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
 wes_palette("Zissou1")
 ```
 
-### The Isle of Dogs
-
-```{r, isleofdogs}
-wes_palette("IsleofDogs1")
-wes_palette("IsleofDogs2")
-
-```
-
 
 ```{r, volcano, fig.height = 3}
 pal <- wes_palette("Zissou1", 21, type = "continuous")
@@ -105,8 +99,6 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
 ```
 
 ### The Darjeeling Limited (2007)
-
-![](http://i.imgur.com/Z2nJvOG.jpg)
 
 ```{r, darjeeling}
 wes_palette("Darjeeling1")
@@ -146,16 +138,12 @@ wes_palette("GrandBudapest1")
 wes_palette("GrandBudapest2")
 ```
 
-```{r, grandbudapest_plot, fig.height = 3}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-  geom_point(size = 3) + 
-  scale_color_manual(values = wes_palette("GrandBudapest1")) + 
-  theme_gray()
+
+### The Isle of Dogs (2018)
+
+```{r, isleofdogs}
+wes_palette("IsleofDogs1")
+wes_palette("IsleofDogs2")
 ```
 
-## Gallery of examples
-
-* [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
-
-![](http://i.imgur.com/rKqbzQB.png)
 

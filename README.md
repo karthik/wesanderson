@@ -39,6 +39,9 @@ names(wes_palettes)
 #> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"
 ```
 
+Palettes
+--------
+
 ### Bottle Rocket (1996)
 
 ``` r
@@ -91,20 +94,6 @@ wes_palette("Zissou1")
 
 ![](figure/lifeaquatic-1.png)
 
-### The Isle of Dogs
-
-``` r
-wes_palette("IsleofDogs1")
-```
-
-![](figure/isleofdogs-1.png)
-
-``` r
-wes_palette("IsleofDogs2")
-```
-
-![](figure/isleofdogs-2.png)
-
 ``` r
 pal <- wes_palette("Zissou1", 21, type = "continuous")
 image(volcano, col = pal)
@@ -126,8 +115,6 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
 ![](figure/zissou_heatmap-1.png)
 
 ### The Darjeeling Limited (2007)
-
-![](http://i.imgur.com/Z2nJvOG.jpg)
 
 ``` r
 wes_palette("Darjeeling1")
@@ -199,18 +186,16 @@ wes_palette("GrandBudapest2")
 
 ![](figure/grandbudapest-2.png)
 
+### The Isle of Dogs (2018)
+
 ``` r
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
-  geom_point(size = 3) + 
-  scale_color_manual(values = wes_palette("GrandBudapest1")) + 
-  theme_gray()
+wes_palette("IsleofDogs1")
 ```
 
-![](figure/grandbudapest_plot-1.png)
+![](figure/isleofdogs-1.png)
 
-Gallery of examples
--------------------
+``` r
+wes_palette("IsleofDogs2")
+```
 
--   [Reading Secure Data Into R from Dropbox](http://aaronbaggett.com/notes/2014/03/28/reading-secure-data-into-r-from-dropbox/)
-
-![](http://i.imgur.com/rKqbzQB.png)
+![](figure/isleofdogs-2.png)
