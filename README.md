@@ -199,3 +199,12 @@ wes_palette("IsleofDogs2")
 ```
 
 ![](figure/isleofdogs-2.png)
+
+As seen in these publications
+-----------------------------
+
+-   [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances 08 Aug 2018
+
+![Imgur](https://i.imgur.com/gYKFwEc.jpg)
+
+![Imgur](https://i.imgur.com/3Ztc5Qa.png)
