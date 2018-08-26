@@ -2,14 +2,20 @@
 Wes Anderson Palettes
 =====================
 
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)
+[![Build
+Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
 
 ![](rushmore.jpg)
 
-> I saved you from boring plots. What did you ever do? - Max Fischer (probably)
+> I saved you from boring plots. What did you ever do? - Max Fischer
+> (probably)
 
-Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
+Tired of generic mass produced palettes for your plots? Short of adding
+an owl and dressing up your plot in a bowler hat, here’s the most indie
+thing you can do to one. First round of palettes derived from the
+amazing Tumblr blog [Wes Anderson
+Palettes.](http://wesandersonpalettes.tumblr.com/)
 
 Installation
 ------------
@@ -136,7 +142,7 @@ wes_palette("Chevalier1")
 
 ![](figure/chevalier-1.png)
 
-### Fantastic Mr. Fox (2009)
+### Fantastic Mr. Fox (2009)
 
 ``` r
 wes_palette("FantasticFox1")
@@ -203,8 +209,16 @@ wes_palette("IsleofDogs2")
 As seen in these publications
 -----------------------------
 
--   [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances 08 Aug 2018
+-   [The environmental niche of the global high seas pelagic longline
+    fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science
+    Advances 08 Aug 2018
 
 ![Imgur](https://i.imgur.com/gYKFwEc.jpg)
 
 ![Imgur](https://i.imgur.com/3Ztc5Qa.png)
+
+-   [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational
+    Gender Gap. Socius: Sociological Research for a Dynamic World, 4,
+    237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956)
+
+![Imgur](https://i.imgur.com/0BVNi9g.jpg)
