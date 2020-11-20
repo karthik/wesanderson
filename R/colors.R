@@ -69,7 +69,8 @@ wes_palette <- function(name, n, type = c("discrete", "continuous")) {
   }
 
   if (type == "discrete" && n > length(pal)) {
-    stop("Number of requested colors greater than what palette can offer")
+    stop("Number of requested colors (",n,") greater than what ",
+         "palette can offer (",length(pal),")")
   }
 
   out <- switch(type,
