@@ -32,7 +32,7 @@ wes_palettes <- list(
 #' These are a handful of color palettes from Wes Anderson movies.
 #'
 #' @param n Number of colors desired. Unfortunately most palettes now only
-#'   have 4 or 5 colors. But hopefully we"ll add more palettes soon. All color
+#'   have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
 #'   schemes are derived from the most excellent Tumblr blog:
 #'   \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
 #'   If omitted, uses all colours.
