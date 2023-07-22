@@ -4,7 +4,9 @@
 \name{heatmap}
 \alias{heatmap}
 \title{heatmap}
-\format{An object of class \code{data.frame} with 144 rows and 5 columns.}
+\format{
+An object of class \code{data.frame} with 144 rows and 5 columns.
+}
 \usage{
 heatmap
 }

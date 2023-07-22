@@ -147,6 +147,18 @@ wes_palette("IsleofDogs1")
 wes_palette("IsleofDogs2")
 ```
 
+### The French Distpatch (2021)
+```{r}
+wes_palette("FrenchDispatch")
+```
+
+### Asteroid City (2023)
+```{r}
+wes_palette("AsteroidCity1")
+wes_palette("AsteroidCity2")
+wes_palette("AsteroidCity3")
+```
+
 ## As seen in these publications
 
 - [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances  08 Aug 2018

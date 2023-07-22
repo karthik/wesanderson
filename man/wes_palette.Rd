@@ -12,7 +12,8 @@ wes_palette(name, n, type = c("discrete", "continuous"))
 \code{Royal1}, \code{Royal2},  \code{Zissou1}, \code{Darjeeling1},
 \code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
 \code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
-\code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2}}
+\code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2},
+\code{FrenchDispatch}, \code{AsteroidCity2}, \code{AsteroidCity2}, \code{AsteroidCity3}}
 
 \item{n}{Number of colors desired. Unfortunately most palettes now only
 have 4 or 5 colors. But hopefully we'll add more palettes soon. All color

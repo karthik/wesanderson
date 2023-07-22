@@ -23,7 +23,10 @@ wes_palettes <- list(
   GrandBudapest2 = c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"),
   IsleofDogs1 = c("#9986A5", "#79402E", "#CCBA72", "#0F0D0E", "#D9D0D3", "#8D8680"),
   IsleofDogs2 = c("#EAD3BF", "#AA9486", "#B6854D", "#39312F", "#1C1718"),
-  FrenchDispatch = c("#90D4CC", "#BD3027", "#B0AFA2", "#7FC0C6", "#9D9C85")
+  FrenchDispatch = c("#90D4CC", "#BD3027", "#B0AFA2", "#7FC0C6", "#9D9C85"),
+  AsteroidCity1 = c("#0A9F9D", "#CEB175", "#E54E21", "#6C8645", "#C18748"),
+  AsteroidCity2 = c("#C52E19", "#AC9765", "#54D8B1", "#b67c3b", "#175149", "#AF4E24"),
+  AsteroidCity3 = c("#FBA72A", "#D3D4D8", "#CB7A5C", "#5785C1")
 )
 
 #' A Wes Anderson palette generator
@@ -40,7 +43,8 @@ wes_palettes <- list(
 #'   \code{Royal1}, \code{Royal2},  \code{Zissou1}, \code{Darjeeling1},
 #'   \code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
 #'   \code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
-#'   \code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2}
+#'   \code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2},
+#'   \code{FrenchDispatch}, \code{AsteroidCity2}, \code{AsteroidCity2}, \code{AsteroidCity3}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
