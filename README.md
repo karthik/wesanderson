@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Wes Anderson Palettes
-=====================
+
+# Wes Anderson Palettes
 
 [![Build
 Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
@@ -17,8 +17,7 @@ thing you can do to one. First round of palettes derived from the
 amazing Tumblr blog [Wes Anderson
 Palettes.](http://wesandersonpalettes.tumblr.com/)
 
-Installation
-------------
+## Installation
 
 ``` r
 install.packages("wesanderson")
@@ -30,8 +29,7 @@ install.packages("wesanderson")
 devtools::install_github("karthik/wesanderson")
 ```
 
-Usage
------
+## Usage
 
 ``` r
 library("wesanderson")
@@ -42,11 +40,11 @@ names(wes_palettes)
 #>  [5] "Royal1"         "Royal2"         "Zissou1"        "Darjeeling1"   
 #>  [9] "Darjeeling2"    "Chevalier1"     "FantasticFox1"  "Moonrise1"     
 #> [13] "Moonrise2"      "Moonrise3"      "Cavalcanti1"    "GrandBudapest1"
-#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"
+#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"    "FrenchDispatch"
+#> [21] "AsteroidCity1"  "AsteroidCity2"  "AsteroidCity3"
 ```
 
-Palettes
---------
+## Palettes
 
 ### Bottle Rocket (1996)
 
@@ -206,19 +204,55 @@ wes_palette("IsleofDogs2")
 
 ![](figure/isleofdogs-2.png)
 
-As seen in these publications
------------------------------
+### The French Distpatch (2021)
+
+``` r
+wes_palette("FrenchDispatch")
+```
+
+![](figure/unnamed-chunk-2-1.png)
+
+### Asteroid City (2023)
+
+``` r
+wes_palette("AsteroidCity1")
+```
+
+![](figure/unnamed-chunk-3-1.png)
+
+``` r
+wes_palette("AsteroidCity2")
+```
+
+![](figure/unnamed-chunk-3-2.png)
+
+``` r
+wes_palette("AsteroidCity3")
+```
+
+![](figure/unnamed-chunk-3-3.png)
+
+## As seen in these publications
 
 -   [The environmental niche of the global high seas pelagic longline
     fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science
     Advances 08 Aug 2018
 
-![Imgur](https://i.imgur.com/gYKFwEc.jpg)
+<figure>
+<img src="https://i.imgur.com/gYKFwEc.jpg" alt="Imgur" />
+<figcaption aria-hidden="true">Imgur</figcaption>
+</figure>
 
-![Imgur](https://i.imgur.com/3Ztc5Qa.png)
+<figure>
+<img src="https://i.imgur.com/3Ztc5Qa.png" alt="Imgur" />
+<figcaption aria-hidden="true">Imgur</figcaption>
+</figure>
 
 -   [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational
     Gender Gap. Socius: Sociological Research for a Dynamic World, 4,
     237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956)
 
-![Imgur](https://i.imgur.com/0BVNi9g.jpg)
+<figure>
+<img src="https://i.imgur.com/0BVNi9g.jpg" alt="Imgur" />
+<figcaption aria-hidden="true">Imgur</figcaption>
+</figure>
