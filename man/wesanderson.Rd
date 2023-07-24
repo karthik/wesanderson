@@ -3,7 +3,6 @@
 \docType{package}
 \name{wesanderson}
 \alias{wesanderson}
-\alias{wesanderson-package}
 \title{wesanderson}
 \description{
 list of palettes from Wes Anderson movies
