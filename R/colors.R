@@ -11,6 +11,7 @@ wes_palettes <- list(
   Royal1 = c("#899DA4", "#C93312", "#FAEFD1", "#DC863B"),
   Royal2 = c("#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"),
   Zissou1 = c("#3B9AB2", "#78B7C5", "#EBCC2A", "#E1AF00", "#F21A00"),
+  Zissou1Continuous = c("#3A9AB2", "#6FB2C1", "#91BAB6", "#A5C2A3", "#BDC881", "#DCCB4E", "#E3B710", "#E79805", "#EC7A05", "#EF5703", "#F11B00"),
   Darjeeling1 = c("#FF0000", "#00A08A", "#F2AD00", "#F98400", "#5BBCD6"),
   Darjeeling2 = c("#ECCBAE", "#046C9A", "#D69C4E", "#ABDDDE", "#000000"),
   Chevalier1 = c("#446455", "#FDD262", "#D3DDDC", "#C7B19C"),
@@ -66,6 +67,10 @@ wes_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
   pal <- wes_palettes[[name]]
+  if (type == "continuous" && name == "Zissou1") {
+    pal <- wes_palettes[["Zissou1Continuous"]]
+  }
+  
   if (is.null(pal))
     stop("Palette not found.")
 
