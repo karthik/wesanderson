@@ -46,6 +46,8 @@ names(wes_palettes)
 
 ## Palettes
 
+NOTE: hexadecimal color codes are available in `./R/colors.R`.
+
 ### Bottle Rocket (1996)
 
 ``` r
