@@ -5,7 +5,7 @@
 \alias{wes_palettes}
 \title{Complete list of palettes}
 \format{
-An object of class \code{list} of length 23.
+An object of class \code{list} of length 24.
 }
 \usage{
 wes_palettes
