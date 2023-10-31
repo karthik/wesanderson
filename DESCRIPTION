@@ -2,7 +2,7 @@ Package: wesanderson
 Title: A Wes Anderson Palette Generator
 Description: Palettes generated mostly from 'Wes Anderson' movies.
 Date: 2023-10-30
-Version: 0.3.6.9000
+Version: 0.3.7
 Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
     email = "karthik.ram@gmail.com", comment = c(ORCID = "0000-0002-0233-1757")),
     person("Hadley", "Wickham", role = "aut",
