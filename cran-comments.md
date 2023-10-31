@@ -1,1 +1,1 @@
-In version 0.3.7 I have updated the package with new color palettes.
+I have fixed the note with .github folder not being ignored in the Rbuild.
