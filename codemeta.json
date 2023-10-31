@@ -82,5 +82,7 @@
     "SystemRequirements": null
   },
   "fileSize": "10.919KB",
-  "contIntegration": "https://travis-ci.org/karthik/wesanderson"
+  "readme": "https://github.com/karthik/wesanderson/blob/master/README.md",
+  "contIntegration": "https://travis-ci.org/karthik/wesanderson",
+  "keywords": ["plot", "wes-anderson-palettes", "r", "data-visualization", "color-palette"]
 }
