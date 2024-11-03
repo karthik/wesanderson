@@ -158,6 +158,14 @@ wes_palette("AsteroidCity2")
 wes_palette("AsteroidCity3")
 ```
 
+### Wes Anderson's Roald Dahl Quartet (2023)
+```{r}
+wes_palette("HenrySugar")
+wes_palette("TheSwan")
+wes_palette("Poison")
+wes_palette("RatCatcher")
+```
+
 ## As seen in these publications
 
 -   [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances 08 Aug 2018
