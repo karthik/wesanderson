@@ -45,7 +45,7 @@ wes_palettes <- list(
 #'   \code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
 #'   \code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
 #'   \code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2},
-#'   \code{FrenchDispatch}, \code{AsteroidCity2}, \code{AsteroidCity2}, \code{AsteroidCity3}
+#'   \code{FrenchDispatch}, \code{AsteroidCity1}, \code{AsteroidCity2}, \code{AsteroidCity3}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
