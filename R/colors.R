@@ -16,6 +16,7 @@ wes_palettes <- list(
   Darjeeling2 = c("#ECCBAE", "#046C9A", "#D69C4E", "#ABDDDE", "#000000"),
   Chevalier1 = c("#446455", "#FDD262", "#D3DDDC", "#C7B19C"),
   FantasticFox1 = c("#DD8D29", "#E2D200", "#46ACC8", "#E58601", "#B40F20"),
+  FantasticFoxContinuous = c("#eebb75","#ecad68","#f0b256","#e5993f","#db883a","#cb6729","#be5c1e","#a84817","#7b2100"),
   Moonrise1 = c("#F3DF6C", "#CEAB07", "#D5D5D3", "#24281A"),
   Moonrise2 = c("#798E87", "#C27D38", "#CCC591", "#29211F"),
   Moonrise3 = c("#85D4E3", "#F4B5BD", "#9C964A", "#CDC08C", "#FAD77B"),
@@ -70,7 +71,10 @@ wes_palette <- function(name, n, type = c("discrete", "continuous")) {
   if (type == "continuous" && name == "Zissou1") {
     pal <- wes_palettes[["Zissou1Continuous"]]
   }
-  
+  if (type == "continuous" && name == "FantasticFox1") {
+    pal <- wes_palettes[["FantasticFoxContinuous"]]
+  }
+
   if (is.null(pal))
     stop("Palette not found.")
 

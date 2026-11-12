@@ -114,6 +114,9 @@ wes_palette("Chevalier1")
 
 ```{r, fantasticfox}
 wes_palette("FantasticFox1")
+wes_palette("FantasticFoxContinuous")
+pal <- wes_palette("FantasticFox1", 21, type = "continuous")
+image(volcano, col = pal)
 ```
 
 ### Moonrise Kingdom (2012)
